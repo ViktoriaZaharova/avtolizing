@@ -1,0 +1,114 @@
+@import "vars"
+
+header
+  box-shadow: inset 0px -1px 0px #DDE0DC
+  .contacts-item
+    margin: 0 53px 0 0
+  .phone-wrapper
+    margin: 0
+    &:before
+      content: ''
+      display: inline-block
+      margin: 0 13px 0 0
+      width: 17px
+      height: 32px
+      background: $accent
+      clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
+  .phone
+    color: #2A2D28
+    font-size: 22px
+  .btn-phone
+    margin: 0 0 0 10px
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 250px
+  width: 100%
+  margin: 0 0 0 -60px
+
+
+.header-row
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-end
+  width: calc(100% - 220px)
+  padding: 0 0 0 8px
+
+.header-top, .header-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.header-top
+  margin: 0 0 -1px 0
+  border-bottom: 1px solid #DDE0DC
+
+.list-language
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 13px
+  font-weight: 500
+  text-transform: uppercase
+  margin: 0 0 0 auto
+  li
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #B0B0B0
+      padding: 17px 0
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 0
+        width: 0
+        height: 4px
+        background: $accent
+        transition: .3s ease
+      &:hover
+        color: #656871
+        &:before
+          width: 80px
+    .active
+      color: #656871
+      &:before
+        width: 80px
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  color: #2A2D28
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  margin: 0 auto 0 0
+  li
+    margin: 0 35px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #2A2D28
+      padding: 24px 0 27px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 0
+        width: 0
+        height: 4px
+        background: $accent
+        transition: .3s ease
+      &:hover
+        color: $accent
+        &:before
+          width: 100px

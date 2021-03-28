@@ -1,0 +1,695 @@
+@import "vars"
+
+.home
+  position: relative
+  background: #FAFAFA
+
+  &:after
+    content: ''
+    background: url("../img/car1.png") no-repeat center
+      size: contain
+    width: 741px
+    height: 392px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    mix-blend-mode: multiply
+    right: 0
+    top: 50%
+    transform: translate(0, -50%)
+    z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 652px
+    height: 100%
+    background: linear-gradient(51.91deg, #FFFFFF -2.58%, rgba(255, 255, 255, 0) 98.57%), #8FBA44
+    opacity: .4
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%)
+
+  .container
+    z-index: 1
+    align-items: center
+
+    &:before
+      content: ''
+      position: absolute
+      bottom: 45px
+      left: 50%
+      transform: translateX(-50%)
+      width: 250px
+      height: 4px
+      background: #8FBA44
+
+    &:after
+      content: ''
+      position: absolute
+      width: 250px
+      height: 4px
+      right: -200px
+      top: 40px
+      background: #8FBA44
+
+
+.main-content
+  max-width: 787px
+  width: 100%
+  padding: 98px 0 112px
+  position: relative
+  z-index: 1
+
+  .btn
+    margin: 14px 0 0
+    padding: 0 25px 0 34px
+    justify-content: space-between
+
+  p
+    font-size: 21px
+    font-weight: 600
+
+
+.overlay-text
+  position: absolute
+  top: 18px
+  left: -218px
+  color: #F1F3F2
+  text-transform: uppercase
+  font-size: 230px
+  font-weight: 900
+  line-height: 274px
+
+.decor-img
+  position: absolute
+
+
+.decor-img1
+  top: 0
+  right: 449px
+
+.decor-img2
+  bottom: 22px
+  right: 131px
+
+//.callback
+.callback
+  position: relative
+  overflow: hidden
+  padding: 146px 0 150px
+
+  &:before
+    content: ''
+    position: absolute
+    left: -562px
+    bottom: 150px
+    width: 1759px
+    height: 872px
+    background: linear-gradient(338.37deg, #FFFFFF 16.84%, rgba(255, 255, 255, 0) 80.01%), linear-gradient(180.36deg, #FFFFFF 0.33%, rgba(255, 255, 255, 0) 97.17%), linear-gradient(89.48deg, #FFFFFF 1.8%, rgba(255, 255, 255, 0) 69.36%), url("../img/bg3.png") no-repeat center
+      size: contain
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+
+.conditions
+  background: #2C333D
+  position: relative
+  width: 100%
+  color: #fff
+  overflow: hidden
+  padding: 80px 70px 56px 88px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+  h2
+    font-size: 26px
+    font-weight: 800
+    text-transform: uppercase
+    margin: 0 0 18px
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: linear-gradient(290.74deg, rgba(36, 45, 57, 0.3) 42.74%, rgba(42, 176, 81, 0) 98.96%), linear-gradient(270.4deg, #2C333D 37.57%, rgba(44, 51, 61, 0.870628) 53.04%, rgba(44, 51, 61, 0) 99.69%), url("../img/bg5.png") no-repeat -170px center
+      size: cover
+    opacity: .25
+    left: 0
+    top: 0
+
+.conditions-content
+  width: calc(100% - 601px)
+  padding: 0 60px 0 0
+  position: relative
+  z-index: 1
+
+.social-content
+  width: 100%
+  color: #fff
+  background: #2AB051
+  mix-blend-mode: normal
+  position: relative
+  overflow: hidden
+  padding: 75px 87px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+  > *
+    position: relative
+    z-index: 1
+
+  h3
+    text-transform: uppercase
+    max-width: 305px
+    width: 100%
+    font-size: 26px
+    font-weight: bold
+
+  &:before
+    content: ''
+    position: absolute
+    left: -127px
+    top: -23px
+    width: 452px
+    height: 276px
+    transform: matrix(-1, 0, 0, 1, 0, 0)
+    mix-blend-mode: multiply
+    background: url("../img/bg4.png") no-repeat center
+      size: contain
+    opacity: .3
+
+.list-social-subscribe
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  li
+    margin: 0 140px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      color: #ffffff
+      font-size: 12px
+      font-weight: bold
+      text-transform: uppercase
+
+.social-icon
+  fill: #fff
+  margin: 0 auto 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.social-icon-fb
+  width: 25px
+  height: 49px
+
+.social-icon-inst
+  width: 49px
+  height: 49px
+
+.social-icon-tg
+  width: 44px
+  height: 49px
+
+//.professional
+.professional
+  position: relative
+  overflow: hidden
+  .container
+    position: relative
+    z-index: 1
+  &:before
+    content: 'via'
+    position: absolute
+    transform: rotate(-90deg)
+    color: #F4F6F4
+    font-size: 186px
+    font-weight: 900
+    text-transform: uppercase
+    line-height: 223px
+    top: 289px
+    left: 100px
+
+  &:after
+    content: 'Auto'
+    position: absolute
+    transform: rotate(90deg)
+    font-size: 220px
+    font-weight: 900
+    color: #F4F6F4
+    text-transform: uppercase
+    line-height: 263px
+    top: 120px
+    right: -230px
+
+  .btn
+    margin: 25px 0 0
+
+  h2
+    font-weight: 300
+
+    strong
+      font-weight: 400
+      display: block
+
+.professional-images
+  max-width: 670px
+  width: 100%
+  height: 470px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff
+
+  &:before
+    content: ''
+    position: absolute
+    width: 340px
+    height: 50px
+    left: -340px
+    top: 50px
+    background: #2AB051
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.professional-images__content
+  position: absolute
+  max-width: 480px
+  width: 100%
+  right: 0
+  bottom: 50px
+  mix-blend-mode: normal
+  padding: 26px 18px 26px 9px
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-weight: 600
+
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%)
+    top: 0
+    right: 0
+    background: rgba(#2AB051, .8)
+
+  > *
+    position: relative
+    z-index: 1
+
+  span
+    max-width: 276px
+    width: 100%
+    line-height: 140%
+    text-transform: uppercase
+
+  p
+    font-size: 74px
+    font-weight: 800
+    margin: 0 15px 0 0
+
+
+.professional-advantages
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.professional-content
+  width: calc(100% - 670px)
+  padding: 0 0 0 54px
+
+  .box-text
+    margin: 19px 0 16px
+    line-height: 170%
+    font-size: 15px
+    font-weight: 300
+    color: #656871
+
+//advantages
+.advantages
+  padding: 60px 0
+  position: relative
+  overflow: hidden
+  background: #2C333D
+  color: #ffffff
+
+  .container
+    flex-direction: column
+    align-items: flex-start
+
+  h2
+    max-width: 570px
+    &:before
+      background: $accent
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    mix-blend-mode: normal
+    background-blend-mode: overlay, normal, normal, normal
+    background: radial-gradient(102.73% 102.73% at 76.87% -71.29%, #FFFFFF 0%, rgba(214, 141, 31, 0) 98.36%), linear-gradient(358.37deg, rgba(44, 51, 61, 0.928261) -8.4%, rgba(44, 51, 61, 0.828262) -8.4%, #2C333D -8.4%, rgba(44, 51, 61, 0) 96.12%), linear-gradient(85.85deg, #2C333D 38.42%, rgba(44, 51, 61, 0.928261) 42.73%, rgba(44, 51, 61, 0.828262) 51.21%, rgba(44, 51, 61, 0) 97.33%), url("../img/bg1.png") no-repeat 700px center
+      size: cover
+    width: 100%
+    height: 100%
+    opacity: .4
+
+  h5
+    margin: 16px 0 0
+    font-size: 30px
+    font-weight: 300
+    font-style: italic
+    display: flex
+    align-items: center
+    width: 100%
+
+    &:before
+      content: ''
+      display: inline-block
+      clip-path: polygon(65% 0%, 100% 0%, 35% 100%, 0% 100%)
+      width: 22px
+      height: 40px
+      background: $accent
+      margin: 0 14px 0 0
+
+    &:after
+      content: ''
+      display: inline-block
+      background: #8FBA44
+      width: 250px
+      height: 4px
+      margin: 0 120px 0 auto
+
+.advantages-content
+  padding: 0 0 0 23px
+  width: 100%
+
+  .list-number
+    li
+      &:nth-child(1), &:nth-child(3)
+        order: -1
+
+.list-number
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  max-width: 755px
+  font-size: 24px
+  font-weight: 300
+  margin: 40px 0 0
+
+  p
+    font-weight: 600
+    text-transform: uppercase
+
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 50px
+    width: 50%
+
+  .number
+    margin: 0 30px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 60px
+    height: 60px
+    min-width: 60px
+    background: $accent
+    color: #2C333D
+    font-weight: 600
+
+//.catalog-car
+.catalog-car
+  padding: 40px 0 85px
+
+.card
+  width: 100%
+  position: relative
+  border: 1px solid #DDE0DC
+  background: #fff
+
+.card-img
+  position: relative
+  width: calc(100% + 2px)
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 230px
+  margin: -1px -1px 0
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.label-list
+  position: absolute
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  top: 14px
+  right: -6px
+  font-size: 12px
+  font-weight: 500
+  z-index: 1
+  color: #fff
+  text-transform: uppercase
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    margin: 0 10px 0 0
+    padding: 4px 9px
+    &:last-child
+      margin: 0
+
+.card-footer
+  width: 100%
+  border-top: 1px solid #DDE0DC
+
+
+.btn-details
+  width: 100%
+  height: 52px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 20px 0 23px
+  font-size: 16px
+  font-weight: 500
+  color: #656871
+  .btn-arrow
+    width: 20px
+    height: 14px
+    fill: #8FBA44
+  &:hover
+    background: $accent
+    color: #fff
+    .btn-arrow
+      fill: #fff
+
+.card-body
+  width: 100%
+  padding: 18px 23px 13px
+
+.card-title
+  width: 100%
+  margin: 0 0 10px
+  color: #2A2D28
+  font-size: 21px
+  font-weight: 600
+  &:before
+    content: ''
+    display: inline-block
+    width: 12px
+    height: 19px
+    margin: 0 11px 0 0
+    clip-path: polygon(55% 0%, 100% 0%, 45% 100%, 0% 100%)
+    background: $accent
+
+.list-characteristics
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  color: #656871
+  li
+    margin: 0 0 11px
+    display: flex
+    align-items: center
+    &:last-child
+      margin: 0
+  .icon
+    width: 14px
+    min-width: 14px
+    height: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 10px 0 0
+    fill: #B0B0B0
+
+.price-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 20px 0 0
+
+.price
+  color: #BA4454
+  font-size: 21px
+  font-weight: bold
+
+.price-step
+  color: #2A2D28
+  font-size: 18px
+  font-weight: 500
+
+.filter-wrapper
+  width: 100%
+  margin: 0 0 40px
+  padding: 27px 35px
+  background: #ffffff
+  border: 1px solid #DDE0DC
+  h2
+    width: 100%
+    margin: 0 0 18px
+    font-size: 30px
+
+.form-filter
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  button
+    max-width: 360px
+    width: 100%
+    height: 66px
+    &:after
+      width: 130px
+  .btn-arrow
+    width: 20px
+    height: 20px
+    margin: 0 0 0 45px
+  label
+    max-width: 176px
+    width: 100%
+    position: relative
+
+.select
+  appearance: none
+  border: 1px solid #DDE0DC
+    radius: 0
+  background: #F5F5F5
+  height: 66px
+  width: 100%
+  padding: 0 25px 0 21px
+  color: #2A2D28
+  font-size: 18px
+  font-weight: 500
+
+.select-arrow
+  position: absolute
+  right: 15px
+  width: 10px
+  height: 10px
+  fill: #2A2D28
+  top: 50%
+  transform: translate(0,-50%)
+  display: flex
+  align-items: center
+  justify-content: center
+
+.range_val
+  display: flex
+  align-items: stretch
+  position: relative
+  flex-wrap: wrap
+  label
+    max-width: 181px
+    width: 100%
+
+
+.inp-group
+  display: flex
+  align-items: stretch
+
+.inp-group-item
+  height: 66px
+  padding: 14px 25px
+  border: 1px solid #DDE0DC
+  background: #F5F5F5
+  width: 100%
+  color: #2A2D28
+  text-transform: uppercase
+  font-size: 12px
+  font-weight: bold
+  margin: 0 -1px 0 0
+  &:last-child
+    margin: 0
+  input
+    background: transparent
+    width: 100%
+    color: #B0B0B0
+    font-size: 20px
+    font-weight: 500
+
+.slider-range
+  width: 100%
+
+.ui-widget.ui-widget-content
+  border: none
+  margin: -2px 0 0
+  background: transparent
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br
+  border-radius: 0
+
+.ui-slider .ui-slider-range
+  background: #2AB051
+  height: 4px
+
+.ui-slider-horizontal
+  height: 4px
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  width: 16px
+  height: 16px
+  border-radius: 50%
+  background: #FFFFFF
+  border: 3px solid #2AB051
+  outline: none
+  cursor: pointer
+  top: -6px
+
+
+
+

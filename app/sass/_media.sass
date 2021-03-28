@@ -1,0 +1,631 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1800px)
+  .btn-subscribe
+    right: -250px
+
+  footer
+    .contacts-item
+      margin: 0 50px 0 0
+
+@media only screen and (max-width: 1680px)
+  .footer-box
+    margin: 0 30px 0 0
+
+  footer
+    .phone-wrapper, .contacts-item
+      margin: 0 30px 0 0
+
+  .btn-subscribe
+    right: -150px
+
+  .map
+    width: 650px
+
+@media only screen and (max-width: 1340px)
+  .btn-subscribe
+    padding: 0 70px 0 60px
+    height: 90px
+
+    .btn-icon
+      width: 53px
+      height: 34px
+      min-width: 53px
+
+@media only screen and (max-width: 1200px)
+  .contacts-item
+    font-size: 15px
+
+  .map
+    position: relative
+    clip-path: none
+    width: calc(100% + 30px)
+    margin: 0 -15px 0
+    right: 0
+    top: 0
+    height: 200px
+
+  .footer-center
+    padding: 36px 0 0
+    .container
+      justify-content: space-between
+
+  .footer-box
+    margin: 0 0 30px
+
+  .btn-subscribe
+    position: relative
+    clip-path: none
+    width: calc(100% + 30px)
+    margin: 15px -15px 0
+    height: 60px
+    padding: 0
+    top: 0
+    bottom: 0
+    right: 0
+    justify-content: center
+    .btn-text
+      margin: 0 12px 0 0
+      font-size: 17px
+
+  .form
+    max-width: 400px
+
+  .conditions-content
+    width: calc(100% - 400px)
+    padding: 0 30px 0 0
+
+  .list-social-subscribe li
+    margin: 0 50px 0 0
+
+  .professional-images
+    width: 470px
+    height: auto
+
+  .professional-images__content
+    font-size: 14px
+    max-width: 266px
+    flex-direction: column
+    align-items: flex-end
+    text-align: right
+    padding: 5px 20px 10px
+    bottom: 20px
+    p
+      font-size: 44px
+      margin: 0
+
+  .professional-content
+    width: calc(100% - 470px)
+
+  .professional
+    &:before
+      display: none
+    &:after
+      font-size: 150px
+      right: -180px
+      top: 100px
+
+  .advantages
+    &:before
+      background: radial-gradient(102.73% 102.73% at 76.87% -71.29%, #FFFFFF 0%, rgba(214, 141, 31, 0) 98.36%), linear-gradient(358.33deg, rgba(44, 51, 61, 0.928261) 0.72%, rgba(44, 51, 61, 0.828262) 0.72%, #2C333D 0.72%, rgba(44, 51, 61, 0) 96.08%), linear-gradient(95.73deg, #2C333D 12.53%, rgba(44, 51, 61, 0.928261) 26.45%, rgba(44, 51, 61, 0.828262) 38.34%, rgba(44, 51, 61, 0) 94.48%), url("../img/bg1.png") center
+        size: cover
+    h5
+      font-size: 18px
+
+  .filter-wrapper
+    margin: 0 0 30px
+    padding: 16px 20px 23px
+
+
+  .form-filter button
+    max-width: 240px
+    &:after
+      width: 88px
+    .btn-arrow
+      margin: 0 0 0 20px
+
+  .home:after
+    width: 541px
+
+  .overlay-text
+    font-size: 150px
+
+  .main-content
+    max-width: 578px
+
+  h1
+    font-size: 30px
+
+  .menu li, header .contacts-item
+    margin: 0 15px 0 0
+
+  .logo
+    margin: 0
+
+  .header-row
+    width: calc(100% - 250px)
+
+  header .phone
+    font-size: 16px
+
+  .links-active
+    font-size: 12px
+
+  .menu
+    font-size: 12px
+
+  .btn-phone
+    width: 80px
+    height: 65px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1050px)
+  .form-filter
+    label
+      max-width: 49%
+      margin: 0 0 10px
+    .inp-group-item
+      max-width: 50%
+      margin: 0
+    button
+      max-width: none
+      margin: 15px auto 0
+
+  .range_val, .inp-group
+    width: 100%
+
+
+@media only screen and (max-width: 992px)
+  .footer-bottom
+    font-size: 14px
+
+  .links-web:after
+    margin: 0 20px
+
+  footer
+    .phone-wrapper
+      width: 100%
+      border-bottom: 1px solid #DDE0DC
+      margin: 0 0 16px
+    .contacts-item
+      margin: 0 auto 11px
+      &:last-child
+        margin: 0 auto
+
+  .footer-top
+    .container
+      flex-direction: column
+      align-items: center
+      &:before
+        display: none
+
+  .btn-phone
+    width: 75px
+    height: 51px
+    margin: 0 7px 0 0
+    .svg-icon
+      width: 20px
+      height: 20px
+
+  .callback
+    padding: 70px 0
+    &:before
+      display: none
+
+  .social-content, .conditions
+    padding: 40px
+
+  .p-100
+    padding: 50px 0
+
+  .professional-content
+    width: 100%
+    padding: 0
+    margin: 0 0 34px
+    .box-text
+      margin: 18px 0 12px
+      font-size: 14px
+
+  .professional-images
+    order: 1
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    max-width: none
+    height: 224px
+
+  .professional
+    padding: 54px 0 0
+    .btn
+      margin: 44px 0 0
+
+  h2
+    font-size: 24px
+
+  .title-decor
+    &:before
+      height: 3px
+      width: 80px
+      left: -15px
+
+  .btn
+    height: 49px
+    font-size: 16px
+
+  .list-dots
+    font-size: 14px
+
+  .list-number
+    font-size: 18px
+    .number
+      margin: 0 20px 0 0
+
+  .advantages h5:after
+    width: 60px
+    height: 3px
+    margin: 0 0 0 auto
+
+  .list-characteristics
+    font-size: 14px
+
+  .card-title, .price
+    font-size: 18px
+
+  .price-step
+    font-size: 16px
+
+  .price-wrapper
+    margin: 14px 0 0
+
+  .btn-details
+    padding: 0 23px 0 28px
+    height: 40px
+    font-size: 16px
+
+  .btn-border-grey
+    font-size: 14px
+    height: 40px
+
+  .col-3
+    width: 50%
+
+  .home:before
+    width: 319px
+    height: 303px
+    top: auto
+    bottom: 0
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%)
+
+  .home:after
+    width: 440px
+    right: -42px
+
+  .menu li a
+    padding: 19px 0
+    font-size: 10px
+
+  .logo
+    max-width: 210px
+
+
+  .header-row
+    width: calc(100% - 210px)
+
+  .list-language li a
+    padding: 13px 0
+
+  .menu li, header .contacts-item
+    font-size: 12px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 870px)
+  .header-row
+    display: none
+
+  .logo
+    margin: 0 auto
+    max-width: 128px
+
+  header
+    height: 60px
+    background: $accent
+    border: none
+    box-shadow: none
+    .container
+      align-items: center
+
+  .btn-search, .btn-burger
+    display: flex
+
+@media only screen and (max-width: 768px)
+  .social-content
+    padding: 35px 20px 28px
+    flex-direction: column
+    align-items: center
+    text-align: center
+    h3
+      text-align: center
+      margin: 0 auto 55px
+      max-width: 211px
+      font-size: 18px
+
+  .list-social-subscribe
+    width: 100%
+    justify-content: space-between
+
+    li
+      margin: 0
+
+  .conditions
+    padding: 40px 20px
+    h2
+      font-size: 18px
+      margin: 0 auto 10px
+
+  .conditions-content
+    width: 100%
+    text-align: center
+    padding: 0
+    margin: 0 0 19px
+    font-size: 14px
+
+  .btn-accent
+    font-size: 15px
+    .btn-arrow
+      margin: 0 0 0 20px
+
+  .form
+    max-width: none
+    .checkbox
+      margin: 19px 0 0
+    input
+      height: 45px
+
+  .input-text
+    font-size: 14px
+
+  .label-wrapper
+    padding: 0 15px
+
+  .checkbox-custom
+    margin: 0 15px 0 0
+
+  .checkbox
+    font-size: 12px
+
+  .btn-accent:after
+    width: 77px
+
+  .social-icon-inst
+    width: 30px
+    height: 30px
+
+  .social-icon-tg
+    width: 34px
+    height: 30px
+
+  .social-icon-fb
+    width: 19px
+    height: 36px
+
+  .mb-30
+    margin: 0 0 15px
+
+  .btn-all
+    margin: 5px auto 0
+
+  .card-body
+    padding: 8px 12px 11px
+
+  .filter-wrapper
+    margin: 0 0 10px
+
+  .title-wrapper
+    h2
+      font-size: 21px
+
+  .button-group .btn
+    height: 40px
+    font-size: 14px
+    padding: 0 20px
+
+
+  .catalog-car
+    padding: 20px 0 40px
+
+  .filter-wrapper
+    h2
+      font-size: 21px
+      margin: 0 0 12px
+
+  .main-content
+    max-width: 400px
+
+  .home:after
+    width: 277px
+    height: 146px
+    bottom: 147px
+    top: auto
+    transform: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 650px)
+  .button-group
+    width: 100%
+    margin: 10px 0 0
+    justify-content: space-between
+    .btn
+      margin: 0 0 5px 0
+      &:last-child
+        margin: 0 0 5px
+
+@media only screen and (max-width: 576px)
+  .footer-box
+    width: 100%
+    h3
+      font-size: 16px
+      margin: 0 0 15px
+    &:first-child
+      .footer-menu
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        flex-wrap: wrap
+
+        li
+          width: 50%
+          &:first-child, &:nth-child(3)
+            order: -1
+
+  .footer-menu
+    li
+      margin: 0 0 10px
+
+  .callback
+    padding: 40px 0
+
+  .form label
+    max-width: none
+
+  .professional-advantages
+    flex-direction: column
+    align-items: flex-start
+
+  .advantages
+    padding: 50px 0 45px
+    h2
+      &:before
+        left: 50%
+        transform: translate(-50%,0)
+    h5
+      margin: 6px 0 0
+      &:before
+        width: 19px
+        height: 35px
+        margin: 0 13px 0 0
+      &:after
+        right: -15px
+
+
+  .advantages-content
+    padding: 0
+    .list-number
+      li
+        &:nth-child(1), &:nth-child(3)
+          order: initial
+      .number
+        width: 45px
+        height: 45px
+        min-width: 45px
+
+  .list-number
+    margin: 25px 0 0
+    li
+      width: 100%
+      margin: 0 0 30px
+
+  .col-3
+    width: 100%
+
+  .card-img
+    height: 174px
+
+  .form-filter
+    button
+      height: 50px
+
+  .select
+    height: 50px
+    font-size: 16px
+    padding: 0 20px 0 9px
+
+  .inp-group-item
+    height: 55px
+    padding: 6px 9px
+    font-size: 10px
+    input
+      font-size: 16px
+      margin: 2px 0 0
+
+  .list-social
+    display: none
+
+  .home .container:before
+    left: -15px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 80px
+    height: 3px
+
+  .home .container:after
+    top: 34px
+    right: -15px
+    height: 3px
+    width: 60px
+
+  .decor-img2
+    width: 49px
+    height: 60px
+    right: 0
+    bottom: 14px
+    top: auto
+    background: url("../img/decor2.png") repeat center top
+    img
+      display: none
+
+  .decor-img1
+    width: 61px
+    height: 61px
+    right: auto
+    left: 0
+    top: 58%
+    transform: translate(0,-50%)
+    background: url("../img/decor1.png") repeat center top
+    img
+      display: none
+
+  .overlay-text
+    display: none
+
+  .main-content
+    max-width: none
+    text-align: center
+    padding: 50px 0 31px
+    h1
+      display: none
+    p
+      font-size: 18px
+      text-align: center
+    .btn
+      margin: 16px auto 0
+      background: $accent
+      border-color: $accent
+      color: #fff
+      .btn-arrow
+        fill: #fff
+
+  .title-mobile
+    display: block
+    width: 100%
+    h1
+      display: block
+      margin: 10px auto 171px
+
+  .name-company
+    font-size: 18px
+
+  h1
+    font-size: 26px
+
+
+@media only screen and (max-width: 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
