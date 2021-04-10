@@ -7,7 +7,7 @@ $("input,textarea").focus(function () {
     }
 });
 
-$('.slider-range').slider({
+$('.slider-range1').slider({
     range: true,
     min: 0,
     max: 25000,
@@ -24,9 +24,63 @@ $('.slider-range').slider({
 });
 
 
-$(".dec1").val($(".slider-range").slider("values", 0) + ' ' + '€');
-$(".dec2").val($(".slider-range").slider("values", 1) + ' ' + '€');
+$(".dec1").val($(".slider-range1").slider("values", 0) + ' ' + '€');
+$(".dec2").val($(".slider-range1").slider("values", 1) + ' ' + '€');
 
+$('.slider-range2').slider({
+    range: true,
+    min: 2000,
+    max: 2021,
+    values: [0, 2018],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec3").val(ui.values[0]);
+        //Поле максимального значения
+        $(".dec4").val(ui.values[1]);
+    }
+});
+
+
+$(".dec3").val($(".slider-range2").slider("values", 0));
+$(".dec4").val($(".slider-range2").slider("values", 1));
+
+$('.slider-range3').slider({
+    range: true,
+    min: 0,
+    max: 25000,
+    values: [1800, 18000],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec5").val(ui.values[0]);
+        //Поле максимального значения
+        $(".dec6").val(ui.values[1]);
+    }
+});
+
+
+$(".dec5").val($(".slider-range3").slider("values", 0));
+$(".dec6").val($(".slider-range3").slider("values", 1));
+
+// accordeon
+function accordeon() {
+    var panel = $('.panel-heading');
+
+    if (panel.hasClass('in')) {
+        $('.in').find('.block_hover').slideDown();
+    }
+
+    $('.panel-heading .block_title').on('click', function () {
+        $(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+    });
+}
+
+accordeon();
 
 // modal
 $(function () {
@@ -81,6 +135,21 @@ $('.btn-search').on('click', function () {
     $(this).toggleClass('open');
     $('.overlay-mobile').fadeToggle();
     $('.mobile-filter').fadeToggle();
+});
+
+$('.brands-slider').slick({
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    variableWidth: true
+});
+
+$('.sidebar-close').on('click', function () {
+   $('.sidebar').fadeOut();
+});
+
+$('.btn-filter').on('click', function () {
+    $('.sidebar').fadeToggle();
 });
 
 // maps

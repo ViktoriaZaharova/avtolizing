@@ -319,6 +319,13 @@
   .menu li, header .contacts-item
     font-size: 12px
 
+  .sorting-line
+    padding: 10px
+
+  .sorting-box
+    font-size: 14px
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px)
@@ -330,7 +337,7 @@
     max-width: 128px
 
   header
-    height: 60px
+    height: 61px
     background: $accent
     border: none
     box-shadow: none
@@ -450,6 +457,59 @@
     bottom: 147px
     top: auto
     transform: none
+
+  .sidebar
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 3
+    padding: 20px
+    background: #fff
+    overflow-y: auto
+    height: 100%
+
+  .btn-filter, .sidebar-close
+    display: flex
+
+  .catalog-content
+    width: 100%
+    padding: 0
+
+  .sorting-line
+    display: none
+
+  .page-catalog-wrapper
+    margin: 0 0 60px
+
+  .sidebar-title
+    padding: 15px 20px
+
+  .sidebar-box .inp-group-item
+    font-size: 13px
+
+  .sidebar-box .inp-group-item input
+    width: calc(100% - 25px)
+
+  .sidebar-box .inp-group-item
+    width: 49%
+
+  .brands-slider__group
+    flex-direction: column
+    align-self: flex-start
+
+  .brands-slider__box
+    width: 160px
+    height: 100px
+    margin: 0 20px 20px 0
+    &:last-child
+      margin-bottom: 0
+
+  .brands-slider
+    margin: 50px 0 0
+
+  .seo-section
+    margin: 0 0 60px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 650px)
@@ -620,6 +680,29 @@
   h1
     font-size: 26px
 
+  .page-top
+    .links-next
+      display: none
+
+  .breadcrumbs
+    font-size: 14px
+
+  .catalog-content h3
+    font-size: 18px
+
+  .seo-section
+    h2
+      margin: 0 0 11px
+      font-size: 24px
+    .box-text
+      font-size: 12px
+
+  .brands-slider__box
+    width: 130px
+    height: 86px
+    margin: 0 10px 20px
+    &:last-child
+      margin-bottom: 0
 
 @media only screen and (max-width: 480px)
   /**/

@@ -1,0 +1,376 @@
+
+.page-top
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 0
+
+.links-next
+  display: flex
+  align-items: center
+  color: $accent
+  font-weight: 600
+  .svg-icon
+    fill: $accent
+  &:hover
+    color: $text
+
+    .svg-icon
+      fill: $text
+
+.links-next__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 15px 0 0
+  width: 17px
+  height: 11px
+
+.page-catalog-wrapper
+  margin: 37px 0 60px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.sidebar
+  max-width: 270px
+  width: 100%
+  h3
+    font-size: 21px
+    font-weight: 600
+    color: #2A2D28
+  h4
+    padding: 0 0 8px 8px
+    width: 100%
+    color: #2A2D28
+    font-size: 13px
+    font-weight: bold
+    text-transform: uppercase
+
+.catalog-content
+  width: calc(100% - 270px)
+  padding: 0 0 0 30px
+  h3
+    width: 100%
+    margin: 0 0 12px
+    font-size: 21px
+    font-weight: 600
+
+.breadcrumbs
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-weight: 600
+  color: #656871
+
+  li
+    a
+      color: #B0B0B0
+      display: flex
+      align-items: center
+
+      &:after
+        content: '—'
+        display: inline-block
+        margin: 0 5px
+
+    span
+      display: inline-block
+      color: #656871
+
+.clear-filter
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $green
+  margin: 15px auto 0
+  font-weight: 500
+  &:hover
+    color: $text
+    .svg-icon
+      fill: $text
+
+.clear-filter__icon
+  fill: $green
+  width: 8px
+  height: 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 6px 0 0
+
+.sidebar-box
+  width: 100%
+  margin: 0 0 -1px 0
+  border: 1px solid #DDE0DC
+  background: #fff
+  padding: 17px 11px 12px
+  label
+    position: relative
+  .select
+    height: 35px
+    color: #656871
+    font-size: 16px
+    font-weight: 500
+    padding: 0 21px 0 17px
+  .select-arrow
+    width: 8px
+    height: 8px
+    fill: #656871
+  .inp-group
+    justify-content: space-between
+  .inp-group-item
+    padding: 9px 11px 7px
+    height: 35px
+    color: #B0B0B0
+    font-size: 15px
+    font-weight: 500
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 48%
+    input
+      width: calc(100% - 30px)
+      font-size: 16px
+      font-weight: 500
+      text-align: right
+      padding: 0
+      color: #656871
+      &::placeholder
+        color: #656871
+  .ui-widget.ui-widget-content
+    background: #DDE0DC
+    margin: 18px auto 0
+    height: 3px
+  .ui-slider .ui-slider-range
+    height: 3px
+  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+    width: 20px
+    height: 20px
+    top: -8px
+    border-width: 4px
+
+.sidebar-title
+  background: #FAFAFA
+  padding: 19px 20px 11px
+
+.list-checkbox
+  width: 100%
+  li
+    margin: 0 0 10px
+    width: 100%
+  .checkbox
+    width: 100%
+    margin: 0
+    color: #656871
+    font-size: 16px
+    font-weight: 500
+  .checkbox-custom
+    width: 20px
+    height: 20px
+    min-width: 20px
+    margin: 0 9px 0 0
+    background: #F5F5F5
+    border: 1px solid #DDE0DC
+  .checkbox-inp:checked + .checkbox-custom
+    background: #2AB051
+    border-color: #2AB051
+
+.links-all
+  color: $green
+  width: fit-content
+  margin: 10px 0 0 29px
+  font-size: 15px
+  font-weight: 500
+  border-bottom: 1px dotted $green
+  &:hover
+    color: $accent
+
+.panel-heading
+  width: 100%
+  h4
+    padding: 0
+  .block_title
+    padding: 0 0 0 10px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .select-arrow
+      position: relative
+      right: 0
+      top: 0
+      transform: none
+
+.block_hover
+  display: none
+  padding: 10px 0 0
+
+.in
+  .block_title
+    .select-arrow
+      transform: rotate(180deg)
+
+.sorting-line
+  width: 100%
+  margin: 0 0 28px
+  border: 1px solid #DDE0DC
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  background: #FAFAFA
+  padding: 12px 40px 12px 42px
+
+.sorting-box
+  color: #B0B0B0
+  font-weight: 500
+  font-size: 16px
+  display: flex
+  align-items: center
+  p
+    margin: 0 10px 0 0
+  .select
+    padding: 0
+    border: none
+    background: transparent
+    height: auto
+    color: $text
+    font-size: 16px
+    font-weight: 500
+
+
+.label-select
+  position: relative
+  display: flex
+  align-items: center
+
+  .select-arrow
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+    margin: 0 0 0 15px
+    fill: #656871
+
+.list-tabs
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+
+.tabs-view-card
+  transition: .3s ease
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 35px
+  height: 35px
+  border: 1px solid #DDE0DC
+  background: #FAFAFA
+  padding: 9px
+  fill: #656871
+
+.tabs-view-card.active
+  fill: $green
+  border-color: $green
+
+.seo-section
+  margin: 0 0 80px
+  h2
+    margin: 0 0 19px
+    font-size: 30px
+    font-weight: 600
+    width: 100%
+  .box-text
+    color: #656871
+    line-height: 150%
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+.brands-slider
+  margin: 74px 0 0
+
+.brands-slider__box
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #DDE0DC
+  height: 140px
+  max-width: 210px
+  margin: 0 30px 0 0
+  width: 100%
+  padding: 25px
+  transition: .3s ease
+  cursor: pointer
+  img
+    transition: .3s ease
+    opacity: .2
+    filter: grayscale(1)
+  &:hover
+    border: 1px solid #8FBA44
+    img
+      filter: grayscale(0)
+      opacity: 1
+
+.slick-dots
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 40px auto 0
+  li
+    transition: .3s ease
+    cursor: pointer
+    background: #2AB051
+    width: 8px
+    height: 8px
+    margin: 0 15px 0 0
+    button
+      display: none
+  .slick-active
+    width: 43px
+
+.brands-slider__group
+  display: flex
+  align-items: stretch
+
+.btn-filter
+  width: 100%
+  margin: 0 auto 35px
+  border: 1px solid #DDE0DC
+  display: none
+  align-items: center
+  justify-content: center
+  background: #FAFAFA
+  color: #2A2D28
+  font-size: 16px
+  font-weight: 500
+  padding: 12px
+  cursor: pointer
+
+.btn-filter-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 20px
+  height: 15px
+  margin: 0 11px 0 0
+
+.sidebar-close
+  width: 20px
+  height: 20px
+  fill: $green
+  margin: 0 0 20px auto
+  cursor: pointer
+  display: none
+  align-items: center
+  justify-content: center
+
