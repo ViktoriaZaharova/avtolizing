@@ -67,6 +67,36 @@ $('.slider-range3').slider({
 $(".dec5").val($(".slider-range3").slider("values", 0));
 $(".dec6").val($(".slider-range3").slider("values", 1));
 
+$('.slider-range4').slider({
+    range: "min",
+    min: 0,
+    max: 50000,
+    value: 11800,
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec7").val(ui.value + ' ' + '€');
+    }
+});
+$(".dec7").val($(".slider-range4").slider("value") + ' ' + '€');
+
+$('.slider-range5').slider({
+    range: "min",
+    min: 0,
+    max: 112,
+    value: 84,
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec8").val(ui.value + ' ' + 'мес.');
+    }
+});
+$(".dec8").val($(".slider-range5").slider("value") + ' ' + 'мес.');
+
 // accordeon
 function accordeon() {
     var panel = $('.panel-heading');
@@ -89,7 +119,7 @@ $(function () {
         close = $('.modal__close, .overlay'),
         modal = $('.modal__div');
 
-    open_modal.on('click',function (event) {
+    open_modal.on('click', function (event) {
         event.preventDefault();
 
         modal.css('display', 'none').animate({
@@ -126,9 +156,9 @@ $(function () {
 
 // mobile menu
 $('.btn-burger').on('click', function () {
-   $(this).toggleClass('clicked');
-   $('.overlay-mobile').fadeToggle();
-   $('.mobile-menu').fadeToggle();
+    $(this).toggleClass('clicked');
+    $('.overlay-mobile').fadeToggle();
+    $('.mobile-menu').fadeToggle();
 });
 
 $('.btn-search').on('click', function () {
@@ -144,16 +174,60 @@ $('.brands-slider').slick({
     variableWidth: true
 });
 
+$('.product-gallery').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    asNavFor: '.product-gallery-preview'
+});
+
+$('.product-gallery-preview').slick({
+    slidesToShow: 5,
+    arrows: true,
+    asNavFor: '.product-gallery',
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg width="17" height="54" viewBox="0 0 17 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M11.6216 0H16.1855L4.74944 27H0.185547L11.6216 0Z" fill="#DDE0DC"/>\n' +
+        '<path d="M4.74944 27H0.185547L11.6217 54H16.1855L4.74944 27Z" fill="#DDE0DC"/>\n' +
+        '</svg>\n</button>',
+    nextArrow: '<button type="button" class="slick-next"><svg width="16" height="54" viewBox="0 0 16 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M4.5639 0H0L11.4361 27H16L4.5639 0Z" fill="#DDE0DC"/>\n' +
+        '<path d="M11.4361 27H16L4.5639 54H0L11.4361 27Z" fill="#DDE0DC"/>\n' +
+        '</svg>\n</button>',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        }
+    ]
+});
+
 $('.sidebar-close').on('click', function () {
-   $('.sidebar').fadeOut();
+    $('.sidebar').fadeOut();
 });
 
 $('.btn-filter').on('click', function () {
     $('.sidebar').fadeToggle();
 });
 
+if ($(".page-product-information__head").length){
+    $('.page-product-information__head').clone().appendTo('.title-mobile');
+}
+
+$('.characteristics-item h5').on('click', function () {
+   $(this).toggleClass('click').siblings('ul').slideToggle();
+});
+
 // maps
-function init () {
+function init() {
 
     //Центрирование и выбор масштаба карты
     var myMap = new ymaps.Map('map', {
@@ -164,7 +238,7 @@ function init () {
     // Создание своей метки
     var myPlacemark = new ymaps.Placemark(
         // Координаты метки
-        [56.949461, 24.139861] , {
+        [56.949461, 24.139861], {
             // Свойства метки
             hintContent: '', //Подсказка при наведении на маркер
             iconContent: '',
@@ -185,7 +259,7 @@ function init () {
         // Список типов карты
         .add('typeSelector')
         // Кнопка изменения масштаба - справа
-        .add('smallZoomControl', { right: 5, top: 75 })
+        .add('smallZoomControl', {right: 5, top: 75})
         // Стандартный набор кнопок
         .add('mapTools')
         //Линейка масштаба
@@ -195,7 +269,7 @@ function init () {
 ymaps.ready(init);
 
 
-function init2 () {
+function init2() {
 
     //Центрирование и выбор масштаба карты
     var myMap = new ymaps.Map('contacts-map', {
@@ -206,7 +280,7 @@ function init2 () {
     // Создание своей метки
     var myPlacemark = new ymaps.Placemark(
         // Координаты метки
-        [56.949461, 24.139861] , {
+        [56.949461, 24.139861], {
             // Свойства метки
             hintContent: '', //Подсказка при наведении на маркер
             iconContent: '',
@@ -227,7 +301,7 @@ function init2 () {
         // Список типов карты
         .add('typeSelector')
         // Кнопка изменения масштаба - справа
-        .add('smallZoomControl', { right: 5, top: 75 })
+        .add('smallZoomControl', {right: 5, top: 75})
         // Стандартный набор кнопок
         .add('mapTools')
         //Линейка масштаба

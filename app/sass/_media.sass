@@ -170,6 +170,19 @@
       padding: 0
       margin: 19px 0 0
 
+  .page-product-gallery
+    width: 570px
+
+  .page-product-information
+    width: calc(100% - 570px)
+
+  .product-gallery-preview
+    padding: 0 30px
+
+  .conditions-product
+    .form
+      max-width: none
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1050px)
   .form-filter
@@ -337,6 +350,66 @@
   .list-requisites
     padding: 20px 15px
 
+  .btn-event
+    height: 100px
+
+  .btn-event span strong
+    font-size: 20px
+
+  .page-product-box
+    h3
+      font-size: 24px
+
+  .page-product-box__head
+    padding: 0 10px 10px
+
+  .conditions-product
+    padding: 32px 20px 24px
+
+  .page-product-gallery
+    width: 500px
+
+  .page-product-information
+    width: calc(100% - 500px)
+
+  .slick-arrow
+    width: 10px
+    height: 33px
+
+  .product-gallery-preview
+    padding: 0 20px
+
+  .product-gallery-item
+    height: 518px
+
+  .payment-month__val
+    width: 65px
+    height: 35px
+    font-size: 18px
+
+  .payment-month
+    p
+      font-size: 11px
+
+  .currency
+    font-size: 11px
+
+  .calculate-box .inp-group-item input
+    font-size: 18px
+    width: 90px
+
+  .page-product-information .new-price
+    font-size: 35px
+
+  .calculate-box h3
+    font-size: 18px
+
+  .calculate-box .inp-group-item
+    font-size: 10px
+
+  .seller-item
+    font-size: 17px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px)
   .header-row
@@ -356,6 +429,23 @@
 
   .btn-search, .btn-burger
     display: flex
+
+  .page-product-gallery
+    width: 100%
+
+
+  .page-product-information
+    width: 100%
+    padding: 0
+    margin: 22px 0 0
+    .page-product-information__head
+      display: none
+
+  .title-mobile
+    display: block
+
+  .page-product-information__head
+    padding: 0 0 14px
 
 @media only screen and (max-width: 768px)
   .social-content
@@ -523,6 +613,25 @@
 
   .page-contacts-box
     width: 50%
+
+  .product-gallery-item
+    height: 300px
+
+  .btn-event
+    padding: 0 30px
+    .btn-icon
+      width: 14px
+      height: 12px
+      margin: 0 0 0 12px
+
+  .characteristics-wrap
+    column-count: 3
+
+  .page-product-box
+    margin: 0 0 30px
+
+  .page-product-wrapper
+    margin: 0 0 32px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 650px)
@@ -769,11 +878,128 @@
   .page h1
     font-size: 21px
     margin: 0 0 23px
+    &:before
+      width: 13px
+      height: 20px
+      margin: 0 9px 0 0
 
   .contacts-map
     margin: 20px -15px 60px
     width: calc(100% + 30px)
     height: 300px
+
+  .page-product-seller
+    flex-direction: column
+    align-items: flex-start
+    padding: 9px 10px
+
+  .seller-item
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+  .page-product
+    h1
+      margin: 0 0 13px
+
+  .page-product-wrapper .old-price
+    font-size: 16px
+
+  .page-product-wrapper .new-price
+    font-size: 35px
+
+  .product-gallery-item
+    height: 193px
+
+  .product-gallery
+    margin: 0 0 7px
+
+  .product-gallery-preview .product-gallery-item
+    width: 77px
+    height: 54px
+
+  .conditions-product
+    width: calc(100% + 40px)
+    margin: 0 -20px
+    padding: 32px 20px 24px
+    h3
+      font-size: 21px
+      margin: 0 auto 15px
+
+  .btn-event
+    width: 100%
+    padding: 0 49px
+
+  .buttons-events
+    margin: 40px 0 60px
+    font-size: 16px
+    strong
+      font-size: 18px
+    span
+      strong
+        font-size: 21px
+    .container
+      padding: 0
+
+  .page-product-box__body
+    padding: 20px
+
+  .page-product-box
+    h4
+      font-size: 14px
+      margin: 0 0 19px
+    h3
+      font-size: 18px
+      text-align: center
+      margin: 0 auto
+    h5
+      font-size: 16px
+      margin: 0 0 5px
+
+  .list-cube
+    font-size: 14px
+    margin: 0 0 11px
+
+  .page-product-box__it
+    margin: 0 0 18px
+
+  .page-product-box__head
+    padding: 0 10px 10px
+
+  .characteristics-wrap
+    column-count: 1
+
+  .characteristics-wrap-body
+    padding: 0
+    h4
+      margin: 0
+      padding: 15px
+
+  .characteristics-item
+    padding: 15px 19px
+    margin: 0
+    border-top: 1px solid #DDE0DC
+    ul
+      display: none
+    h5
+      margin: 0
+      display: flex
+      align-items: center
+      &:after
+        content: ''
+        display: inline-block
+        margin: 0 0 0 auto
+        width: 8px
+        height: 8px
+        background: url("../img/arrow-bottom.svg") no-repeat center
+          size: contain
+    h5.click
+      &:after
+        transform: rotate(180deg)
+    ul
+      padding: 7px 0 0
+      li
+        margin: 0 0 1px
 
 
 @media only screen and (max-width: 480px)
