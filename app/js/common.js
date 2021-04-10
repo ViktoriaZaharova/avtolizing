@@ -194,3 +194,44 @@ function init () {
 
 ymaps.ready(init);
 
+
+function init2 () {
+
+    //Центрирование и выбор масштаба карты
+    var myMap = new ymaps.Map('contacts-map', {
+        center: [56.949461, 24.139861],
+        zoom: 14
+    });
+
+    // Создание своей метки
+    var myPlacemark = new ymaps.Placemark(
+        // Координаты метки
+        [56.949461, 24.139861] , {
+            // Свойства метки
+            hintContent: '', //Подсказка при наведении на маркер
+            iconContent: '',
+
+        }, {
+            iconImageHref: 'img/marker2.png',  // картинка иконки
+            iconImageSize: [40, 44],                                      // размеры картинки
+
+        });
+
+    // Добавление метки на карту
+    myMap.geoObjects.add(myPlacemark);
+
+    //Элементы управления
+    myMap.controls
+    // Кнопка изменения масштаба
+        .add('zoomControl')
+        // Список типов карты
+        .add('typeSelector')
+        // Кнопка изменения масштаба - справа
+        .add('smallZoomControl', { right: 5, top: 75 })
+        // Стандартный набор кнопок
+        .add('mapTools')
+        //Линейка масштаба
+        .add(new ymaps.control.ScaleLine());
+}
+
+ymaps.ready(init2);

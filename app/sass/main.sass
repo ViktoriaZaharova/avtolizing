@@ -399,7 +399,13 @@ h2
     padding: 0 18px 0 20px
     color: #fff
     font-size: 16px
-
+  textarea
+    height: 90px
+    border: 1px solid #656871
+    padding: 20px
+    background: transparent
+    color: #fff
+    font-size: 16px
   label
     position: relative
     max-width: 48.5%
@@ -413,6 +419,12 @@ h2
   .checkbox
     margin: 25px 0 0
     max-width: none
+  .label-message
+    max-width: none
+    .label-wrapper
+      top: 20px
+      left: 0
+      transform: none
 
 
 .label-wrapper
@@ -455,7 +467,7 @@ h2
   letter-spacing: 0.05em
 
   a
-    display: inline-block
+    display: inline
     text-decoration: underline
     color: $accent
     &:hover
@@ -485,6 +497,22 @@ h2
 .checkbox-inp:checked + .checkbox-custom:before
   background: url("../img/checkbox.svg") no-repeat center
     size: contain
+
+.form-footer
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  button
+    max-width: 289px
+  .checkbox
+    width: calc(100% - 289px)
+    padding: 0 0 0 20px
+    margin: 0
+    align-items: flex-start
+  .checkbox-custom
+    margin: 0 18px 0 0
 
 .list-dots
   color: #656871
@@ -712,12 +740,17 @@ h2
     transform: translate(0,-50%)
     fill: #B0B0B0
 
-
+.page
+  h1
+    width: 100%
+    margin: 0 0 34px
+    font-weight: 600
 
 @import "header"
 @import "home"
 @import "footer"
 @import "modal"
 @import "catalog"
+@import "contacts"
 @import "media"
 // Всегда в конце
