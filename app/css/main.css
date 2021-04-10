@@ -1677,6 +1677,7 @@ header {
           justify-content: space-between;
   color: #656871; }
   .list-characteristics li {
+    width: 50%;
     margin: 0 0 11px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1686,6 +1687,10 @@ header {
             align-items: center; }
     .list-characteristics li:last-child {
       margin: 0; }
+    .list-characteristics li:nth-child(even) {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
   .list-characteristics .icon {
     width: 14px;
     min-width: 14px;
