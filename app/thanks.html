@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Autovia</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="overlay-mobile">
+
+</div>
+
+<div class="mobile-filter mobile-wrapper">
+  <form method="post" class="form-search">
+    <label><input type="text" placeholder="Поиск..." name="search"></label>
+    <button type="submit">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </form>
+
+  <form method="post" class="form-filter">
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Город">Город</option>
+        <option value="Город">Город</option>
+        <option value="Город">Город</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Марка">Марка</option>
+        <option value="Марка">Марка</option>
+        <option value="Марка">Марка</option>
+        <option value="Марка">Марка</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Модель">Модель</option>
+        <option value="Модель">Модель</option>
+        <option value="Модель">Модель</option>
+        <option value="Модель">Модель</option>
+      </select>
+    </label>
+    <label class="w-50">
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Год, от">Год, от</option>
+      </select>
+    </label>
+    <label class="w-50">
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Год, до">Год, до</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Топливо">Топливо</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Трансмиссия">Трансмиссия</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Тип кузова">Тип кузова</option>
+      </select>
+    </label>
+
+    <div class="range_val">
+      <div class="inp-group">
+        <label class="inp-group-item">
+          <span class="input-text-range">цена,  от</span>
+          <input type="text" name="dec" class="dec1">
+        </label>
+        <label class="inp-group-item">
+          <span class="input-text-range">цена,  до</span>
+          <input type="text" name="dec" class="dec2">
+        </label>
+      </div>
+      <div class="slider-range slider-range1"></div>
+    </div>
+
+    <button type="submit" class="btn btn-accent">
+      <span class="btn-text">найти авто</span>
+      <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+    </button>
+  </form>
+</div>
+
+<div class="mobile-menu mobile-wrapper">
+  <div class="mobile-box">
+    <ul class="menu">
+      <li><a href="#">автолизинг</a></li>
+      <li><a href="#" class="active">Выкуп авто</a></li>
+      <li><a href="#">авто партнеров</a></li>
+      <li><a href="#">о нас</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </div>
+
+  <div class="mobile-box">
+    <div class="phone-wrapper__body">
+      <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+
+      <a href="#modal__callback" class="links-active open_modal">
+        Подать заявку на лизинг</a>
+    </div>
+
+    <a href="mailto:info@manslizings.lv" class="contacts-item">
+      <span>E-mail:</span>info@manslizings.lv
+    </a>
+    <div class="contacts-item">
+      <span>Режим работы:</span> 9:00 - 22:00
+    </div>
+  </div>
+
+  <div class="mobile-box">
+    <ul class="list-language">
+      <li><a href="#">LATVIEŠU</a></li>
+      <li><a href="#" class="active">РУССКИЙ</a></li>
+      <li><a href="#">ENGLISH</a></li>
+    </ul>
+
+    <ul class="list-social">
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#telegram"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#whatsapp"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#fb"></use>
+        </svg>
+      </a></li>
+      <li><a href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#instagram"></use>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<header>
+  <div class="container">
+    <div class="btn-search">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </div>
+
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <div class="header-row">
+      <div class="header-top">
+        <a href="mailto:info@manslizings.lv" class="contacts-item">
+          <span>E-mail:</span>info@manslizings.lv
+        </a>
+        <div class="contacts-item">
+          <span>Режим работы:</span> 9:00 - 22:00
+        </div>
+
+        <ul class="list-language">
+          <li><a href="#">LATVIEŠU</a></li>
+          <li><a href="#" class="active">РУССКИЙ</a></li>
+          <li><a href="#">ENGLISH</a></li>
+        </ul>
+      </div>
+      <div class="header-bottom">
+        <ul class="menu">
+          <li><a href="#">автолизинг</a></li>
+          <li><a href="#" class="active">Выкуп авто</a></li>
+          <li><a href="#">авто партнеров</a></li>
+          <li><a href="#">о нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+
+        <div class="phone-wrapper">
+          <div class="phone-wrapper__body">
+            <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+
+            <a href="#modal__callback" class="links-active open_modal">
+              Подать заявку на лизинг</a>
+          </div>
+
+          <a href="#modal__callback" class="btn-phone open_modal">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-burger">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+    </div>
+  </div>
+</header>
+
+
+<section class="page page-thanks">
+  <div class="container">
+
+    <div class="page-thanks__item">
+      <div class="thanks-icon">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#checkbox"></use>
+        </svg>
+      </div>
+      <h1>Спасибо! Ваша заявка получена.
+      </h1>
+      <div class="box-text">
+        <p>В ближайшее время с Вами свяжется менеджер, чтобы уточнить все необходимые детали.</p>
+        <p>Если у Вас возникнут
+          вопросы,
+          звоните на <a href="tel:26-612-612" class="phone-item">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#phone2"></use>
+            </svg>
+            26-612-612</a></p>
+      </div>
+      <a href="#" class="btn btn-accent"><span class="btn-text">на главную</span><span class="btn-arrow"><svg
+          class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="phone-wrapper">
+        <a href="#modal__callback" class="btn-phone open_modal">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+        <div class="phone-wrapper__body">
+          <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+        </div>
+      </div>
+
+      <a href="mailto:info@manslizings.lv" class="contacts-item">
+        <span>E-mail:</span>info@manslizings.lv
+      </a>
+      <div class="contacts-item">
+        <span>Режим работы:</span> 9:00 - 22:00
+      </div>
+
+      <a href="#" class="btn btn-subscribe">
+        <span class="btn-text">Подписаться на новости</span>
+        <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-center">
+    <div class="container">
+      <div class="footer-box">
+        <h3>Больше на сайте</h3>
+        <ul class="footer-menu">
+          <li><a href="#">Автолизинг</a></li>
+          <li><a href="#">Выкуп авто</a></li>
+          <li><a href="#">Авто партнеров</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Безопасность</h3>
+        <ul class="footer-menu">
+          <li><a href="#">Правила пользования</a></li>
+          <li><a href="#">Политика безопасности</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Предприятие</h3>
+        <ul class="footer-menu">
+          <li><p>SIA 'RP motors' 44103127443</p></li>
+          <li><p>Valmiera - Rīgas iela 62, LV-4201</p></li>
+        </ul>
+      </div>
+
+      <div class="map" id="map"></div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <a href="http://autovia.lv" class="links-web">autovia.lv</a>
+      <div class="copyright"> © 2021.Все права защищены</div>
+    </div>
+  </div>
+</footer>
+
+<ul class="list-social">
+  <li><a href="#">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#telegram"></use>
+    </svg>
+  </a></li>
+  <li><a href="#">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#vk"></use>
+    </svg>
+  </a></li>
+  <li><a href="#">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#whatsapp"></use>
+    </svg>
+  </a></li>
+  <li><a href="#">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#fb"></use>
+    </svg>
+  </a></li>
+  <li><a href="#">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#instagram"></use>
+    </svg>
+  </a></li>
+</ul>
+
+<!--modal-->
+<div class="modal__div" id="modal__callback">
+  <div class="modal__wrapper">
+    <span class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+    <h2>Оставить заявку</h2>
+    <p>Мы свяжемся с вами в ближайшее время</p>
+
+    <form method="post" class="form">
+      <label>
+          <span class="label-wrapper">
+            <span class="input-text">Ваше Имя</span>
+          </span>
+        <input type="text" name="name">
+      </label>
+
+      <label>
+          <span class="label-wrapper">
+            <span class="input-text">Телефон</span>
+            <span class="necessarily">обязательно</span>
+          </span>
+        <input type="text" name="phone" required>
+      </label>
+
+      <button type="submit" class="btn btn-accent">
+        <span class="btn-text">отправить</span>
+        <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+      </button>
+
+      <label class="checkbox">
+        <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+        <span class="checkbox-custom"></span>
+        <span class="label">Я согласен с <a href="#">политикой безопасности</a> и <a href="#">правилами использования персональных даных</a></span>
+      </label>
+      <label class="checkbox">
+        <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+        <span class="checkbox-custom"></span>
+        <span class="label">Я хочу получать маркетинговые предложения</span>
+      </label>
+    </form>
+  </div>
+</div>
+
+<div class="modal__div modal-thanks" id="modal__thanks">
+  <div class="modal__wrapper">
+    <span class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+    <h2>Заявка отправлена!</h2>
+    <p>Благодарим вас! Наш специалист свяжется с вами по телефону в ближайшее время для уточнение деталей.</p>
+  </div>
+</div>
+<!-- Пoдлoжкa -->
+<div class="overlay"></div>
+
+<a href="#modal__thanks" class="btn btn-accent open_modal">Заявка отправлена!</a>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

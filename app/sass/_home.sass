@@ -449,9 +449,12 @@
 
 .card
   width: 100%
+  height: 100%
   position: relative
   border: 1px solid #DDE0DC
   background: #fff
+  display: flex
+  flex-direction: column
 
 .card-img
   position: relative
@@ -517,6 +520,7 @@
 .card-body
   width: 100%
   padding: 18px 23px 13px
+  margin: 0 0 auto
 
 .card-title
   width: 100%
@@ -524,6 +528,7 @@
   color: #2A2D28
   font-size: 21px
   font-weight: 600
+  min-height: 48px
   &:before
     content: ''
     display: inline-block
