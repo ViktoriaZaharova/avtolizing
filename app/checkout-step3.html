@@ -263,7 +263,7 @@
       <form method="post" class="checkout-form form">
         <div class="checkout-head">
           <a href="#" class="btn btn-white">
-            <span class="btn-text">подробнее  О  Вас</span>
+            <span class="btn-text">Работа и финансы</span>
             <span class="btn-arrow"><svg
                 class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
           </a>
@@ -271,99 +271,85 @@
 
         <div class="checkout-body">
           <div class="checkout-stages">
-            <p>Осталось 2 шага из 3</p>
+            <p>Остался последний шаг</p>
             <div class="checkout-stages-lines">
               <div class="checkout-stages-box step-ready"></div>
-              <div class="checkout-stages-box"></div>
-              <div class="checkout-stages-box"></div>
+              <div class="checkout-stages-box step-ready"></div>
+              <div class="checkout-stages-box step-ready"></div>
             </div>
           </div>
 
           <div class="w-100">
             <div class="form-checkout-row row">
-              <div class="col-3">
-                <label class="label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Ваше Имя и Фамилия*</span>
-                </span>
-                  <input type="text" name="name">
-                </label>
+              <div class="col-12">
+                <h3>Работа</h3>
               </div>
               <div class="col-3">
                 <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Телефон*</span>
+                  <span class="input-text">Работодатель*</span>
                 </span>
-                  <input type="text" name="phone">
+                  <input type="text" name="address">
                 </label>
               </div>
               <div class="col-3">
                 <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Е-почта*</span>
+                  <span class="input-text">Должность*</span>
                 </span>
-                  <input type="text" name="mail">
-                </label>
-              </div>
-
-              <div class="col-3">
-                <label class="input-error label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Персональный код*</span>
-                </span>
-                  <input type="text" name="name" value="99999999">
-
-                  <span class="input-description">xxxxxx-xxxxx (32xxxxxxxxx)</span>
+                  <input type="text" name="address">
                 </label>
               </div>
               <div class="col-3">
-                <label class="input-luck label-select">
+                <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Паспорт*</span>
+                  <span class="input-text">Опыт работы (мес.)*</span>
                 </span>
-                  <select name="select" class="select-checkout">
-                    <option value="Гражданин LV">Гражданин LV</option>
-                    <option value="Гражданин LV">Гражданин LV</option>
-                    <option value="Гражданин LV">Гражданин LV</option>
-                    <option value="Гражданин LV">Гражданин LV</option>
-                  </select>
+                  <input type="text" name="address">
                 </label>
               </div>
               <div class="col-3">
-                <label class="label-select">
+                <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Образование*</span>
+                  <span class="input-text">Вид доходов (зарп. и т.д.) *</span>
                 </span>
-                  <select name="select" class="select-checkout">
-                    <option value="Высшее">Высшее</option>
-                    <option value="Среднее">Среднее</option>
-                    <option value="Высшее">Высшее</option>
-                  </select>
+                  <input type="text" name="address">
+                </label>
+              </div>
+              <div class="col-3">
+                <label class="label-input">
+                <span class="label-wrapper">
+                  <span class="input-text">Доходы, мес*</span>
+                </span>
+                  <input type="text" name="address">
                 </label>
               </div>
             </div>
+            <div class="form-checkout-row row">
+              <div class="col-12">
+                <h3>Выписка со счёта</h3>
+                <div class="form-description">
+                  <p>Выписка необходима, чтобы подготовить для Вас наилучшее предложение.</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="label-file">
+                  <input type="file" name="file" class="input-file">
+                  <span class="input-file-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#camera"></use></svg></span>
+                </label>
+              </div>
 
-            <ul class="list-checkbox">
-              <li>
-                <label class="checkbox">
-                  <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
-                  <span class="checkbox-custom"></span>
-                  <span class="label">Водительское удостоверение</span>
-                </label>
-              </li>
-              <li>
-                <label class="checkbox">
-                  <input class="checkbox-inp" type="checkbox" name="checkbox">
-                  <span class="checkbox-custom"></span>
-                  <span class="label">Политическая персона</span>
-                </label>
-              </li>
-            </ul>
+            </div>
           </div>
 
           <div class="checkout-footer">
-            <a href="#" class="btn btn-accent btn-step"><span class="btn-text">Вперед</span><span class="btn-arrow"><svg
-                class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
+            <a href="#" class="links-prev">
+              <span class="links-prev-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+              <span class="links-prev-text">Вернуться назад</span>
+            </a>
+
+            <button type="submit" class="btn btn-accent btn-step"><span class="btn-text">готово</span><span class="btn-arrow"><svg
+                class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></button>
           </div>
         </div>
       </form>

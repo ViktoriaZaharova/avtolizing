@@ -183,6 +183,12 @@
     .form
       max-width: none
 
+  .checkout-form
+    max-width: none
+
+  .page-checkout
+    padding: 45px 0 100px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1050px)
   .form-filter
@@ -559,7 +565,7 @@
     max-width: none
     .checkbox
       margin: 19px 0 0
-    input
+    input, .select-checkout
       height: 45px
 
   .input-text
@@ -703,6 +709,54 @@
 
   .page-product-wrapper
     margin: 0 0 32px
+
+  .select-checkout
+    padding: 0 15px 0 13px
+    background-position: calc(100% - 15px) center
+    font-size: 14px
+
+  .label-select .label-wrapper
+    padding: 0 13px
+
+  .checkout-form
+    margin: 24px 0 0
+    label
+      margin: 0 0 25px
+    input
+      padding: 0 13px
+      font-size: 14px
+    .label-wrapper
+      padding: 0 13px
+    .list-checkbox
+      .checkbox
+        margin: 0
+        font-size: 14px
+
+  .input-description
+    padding: 2px 13px
+
+  .checkout-body
+    padding: 36px 15px 30px
+
+  .checkout-head
+    padding: 20px
+    .btn
+      font-size: 16px
+    .btn-arrow
+      margin: 0 0 0 15px
+      width: 18px
+      height: 12px
+
+  .checkout-stages
+    margin: 0 0 20px
+    font-size: 13px
+
+  .checkout-stages-lines
+    margin: 10px 0 0
+
+  .checkout-stages-box
+    margin: 0 10px 0 0
+    width: 70px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 650px)
@@ -1025,6 +1079,36 @@
     .svg-icon
       width: 14px
       height: 14px
+
+  .checkout-form
+    .list-checkbox
+      flex-direction: column
+      align-items: flex-start
+      li
+        margin: 0 0 10px
+
+  .btn-step
+    margin: 0
+    max-width: none
+
+  .checkout-footer
+    margin: 30px 0 0
+
+  .page-checkout .box-text
+    font-size: 14px
+
+  .checkout-form h3
+    font-size: 16px
+
+  .links-prev
+    order: 1
+    margin: 20px auto 0
+
+  .links-prev-icon
+    display: none
+
+  .form-description
+    font-size: 13px
 
 @media only screen and (max-width: 480px)
   /**/

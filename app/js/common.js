@@ -7,6 +7,25 @@ $("input,textarea").focus(function () {
     }
 });
 
+$('input, textarea').each(function(){
+    var $this = $(this),
+        val = $this.val();
+
+    if(val.length >= 1){
+        $(this).parent().addClass("focus");
+    }else {
+        $(this).parent().removeClass("focus");
+    }
+});
+
+$(".label-select").on('click', function () {
+    $(this).addClass("focus");
+}).blur(function () {
+    if ($(this).find('select').val() === '') {
+        $(this).removeClass("focus");
+    }
+});
+
 $('.slider-range1').slider({
     range: true,
     min: 0,

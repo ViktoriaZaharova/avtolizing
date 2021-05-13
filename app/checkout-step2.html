@@ -263,7 +263,7 @@
       <form method="post" class="checkout-form form">
         <div class="checkout-head">
           <a href="#" class="btn btn-white">
-            <span class="btn-text">подробнее  О  Вас</span>
+            <span class="btn-text">Еще немного о Вас</span>
             <span class="btn-arrow"><svg
                 class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
           </a>
@@ -271,24 +271,100 @@
 
         <div class="checkout-body">
           <div class="checkout-stages">
-            <p>Осталось 2 шага из 3</p>
+            <p>Остался 1 шаг из 3</p>
             <div class="checkout-stages-lines">
               <div class="checkout-stages-box step-ready"></div>
-              <div class="checkout-stages-box"></div>
+              <div class="checkout-stages-box step-ready"></div>
               <div class="checkout-stages-box"></div>
             </div>
           </div>
 
           <div class="w-100">
             <div class="form-checkout-row row">
+              <div class="col-12">
+                <h3>Адрес проживания</h3>
+              </div>
               <div class="col-3">
                 <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Ваше Имя и Фамилия*</span>
+                  <span class="input-text">Адрес*</span>
+                </span>
+                  <input type="text" name="address">
+                </label>
+              </div>
+              <div class="col-3">
+                <label class="label-select">
+                <span class="label-wrapper">
+                  <span class="input-text">Вид проживания*</span>
+                </span>
+                  <select name="select" class="select-checkout">
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="col-3">
+                <label class="label-input">
+                <span class="label-wrapper">
+                  <span class="input-text">Дети до 18 лет*</span>
+                </span>
+                  <input type="text" name="age">
+                </label>
+              </div>
+
+              <div class="col-3">
+                <label class="label-select">
+                <span class="label-wrapper">
+                  <span class="input-text">Семейное положение*</span>
+                </span>
+                  <select name="select" class="select-checkout">
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="col-3">
+                <label class="label-select">
+                <span class="label-wrapper">
+                  <span class="input-text">Платежи по другим займам*</span>
+                </span>
+                  <select name="select" class="select-checkout">
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="form-checkout-row row">
+              <div class="col-12">
+                <h3>Шофер</h3>
+              </div>
+              <div class="col-3">
+                <label class="label-input">
+                <span class="label-wrapper">
+                  <span class="input-text">Имя и Фамилия*</span>
                 </span>
                   <input type="text" name="name">
                 </label>
               </div>
+              <div class="col-3">
+                <label class="label-select">
+                <span class="label-wrapper">
+                  <span class="input-text">Персональный код*</span>
+                </span>
+                  <select name="select" class="select-checkout">
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                    <option value="Вид проживания">Вид проживания</option>
+                  </select>
+                </label>
+              </div>
+
               <div class="col-3">
                 <label class="label-input">
                 <span class="label-wrapper">
@@ -297,6 +373,7 @@
                   <input type="text" name="phone">
                 </label>
               </div>
+
               <div class="col-3">
                 <label class="label-input">
                 <span class="label-wrapper">
@@ -307,61 +384,30 @@
               </div>
 
               <div class="col-3">
-                <label class="input-error label-input">
+                <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Персональный код*</span>
+                  <span class="input-text">Адрес*</span>
                 </span>
-                  <input type="text" name="name" value="99999999">
-
-                  <span class="input-description">xxxxxx-xxxxx (32xxxxxxxxx)</span>
+                  <input type="text" name="address">
                 </label>
               </div>
               <div class="col-3">
-                <label class="input-luck label-select">
+                <label class="label-input">
                 <span class="label-wrapper">
-                  <span class="input-text">Паспорт*</span>
+                  <span class="input-text">Принадлежность (друг и т.д.) *</span>
                 </span>
-                  <select name="select" class="select-checkout">
-                    <option value="Гражданин LV">Гражданин LV</option>
-                    <option value="Гражданин LV">Гражданин LV</option>
-                    <option value="Гражданин LV">Гражданин LV</option>
-                    <option value="Гражданин LV">Гражданин LV</option>
-                  </select>
-                </label>
-              </div>
-              <div class="col-3">
-                <label class="label-select">
-                <span class="label-wrapper">
-                  <span class="input-text">Образование*</span>
-                </span>
-                  <select name="select" class="select-checkout">
-                    <option value="Высшее">Высшее</option>
-                    <option value="Среднее">Среднее</option>
-                    <option value="Высшее">Высшее</option>
-                  </select>
+                  <input type="text" name="address">
                 </label>
               </div>
             </div>
-
-            <ul class="list-checkbox">
-              <li>
-                <label class="checkbox">
-                  <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
-                  <span class="checkbox-custom"></span>
-                  <span class="label">Водительское удостоверение</span>
-                </label>
-              </li>
-              <li>
-                <label class="checkbox">
-                  <input class="checkbox-inp" type="checkbox" name="checkbox">
-                  <span class="checkbox-custom"></span>
-                  <span class="label">Политическая персона</span>
-                </label>
-              </li>
-            </ul>
           </div>
 
           <div class="checkout-footer">
+            <a href="#" class="links-prev">
+              <span class="links-prev-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+              <span class="links-prev-text">Вернуться назад</span>
+            </a>
+
             <a href="#" class="btn btn-accent btn-step"><span class="btn-text">Вперед</span><span class="btn-arrow"><svg
                 class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
           </div>
