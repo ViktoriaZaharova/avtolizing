@@ -229,6 +229,19 @@ $('.product-gallery-preview').slick({
     ]
 });
 
+$('.main-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg width="17" height="54" viewBox="0 0 17 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M11.6216 0H16.1855L4.74944 27H0.185547L11.6216 0Z"/>\n' +
+        '<path d="M4.74944 27H0.185547L11.6217 54H16.1855L4.74944 27Z"/>\n' +
+        '</svg>\n</button>',
+    nextArrow: '<button type="button" class="slick-next"><svg width="16" height="54" viewBox="0 0 16 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M4.5639 0H0L11.4361 27H16L4.5639 0Z"/>\n' +
+        '<path d="M11.4361 27H16L4.5639 54H0L11.4361 27Z"/>\n' +
+        '</svg>\n</button>',
+});
+
 var $pagingInfo = $('.counter-slide');
 var $teamSlider = $('.page-article-slider');
 
