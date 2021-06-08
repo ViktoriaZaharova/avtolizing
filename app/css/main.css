@@ -1060,28 +1060,6 @@ header {
 .home {
   position: relative;
   background: #FAFAFA; }
-  .home:after {
-    content: '';
-    background: url("../img/car1.png") no-repeat center;
-      background-size: contain;
-    width: 741px;
-    height: 392px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    mix-blend-mode: multiply;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    z-index: 1; }
   .home:before {
     content: '';
     position: absolute;
@@ -1116,6 +1094,26 @@ header {
       right: -200px;
       top: 40px;
       background: #8FBA44; }
+
+.main-slider__item-img {
+  mix-blend-mode: multiply;
+  width: 741px;
+  height: 392px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 1; }
 
 .main-slider .slick-prev {
   left: 20px; }
@@ -3968,7 +3966,7 @@ header {
       width: 88px; }
     .form-filter button .btn-arrow {
       margin: 0 0 0 20px; }
-  .home:after {
+  .main-slider__item-img {
     width: 541px; }
   .overlay-text {
     font-size: 150px; }
@@ -4127,7 +4125,7 @@ header {
     bottom: 0;
     -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%); }
-  .home:after {
+  .main-slider__item-img {
     width: 440px;
     right: -42px; }
   .menu li a {
@@ -4313,7 +4311,7 @@ header {
     font-size: 18px; }
   h1 {
     font-size: 26px; }
-  .home:after {
+  .main-slider__item-img {
     height: 300px;
     width: 400px; }
   .news-img {
@@ -4415,7 +4413,7 @@ header {
   .filter-wrapper h2 {
     font-size: 21px;
     margin: 0 0 12px; }
-  .home:after {
+  .main-slider__item-img {
     width: 277px;
     height: 146px;
     bottom: 147px;
