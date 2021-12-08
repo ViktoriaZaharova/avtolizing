@@ -343,25 +343,64 @@
   display: flex
   align-items: stretch
 
-.btn-filter
+.catalog-mobile-nav
   width: 100%
-  margin: 0 auto 35px
-  border: 1px solid #DDE0DC
   display: none
+  align-items: stretch
+  margin: 0 0 35px
+
+.mobile-sorting
+  left: 0
+  top: 0
+  z-index: 3
+  padding: 20px
+  background: #fff
+  overflow-y: auto
+  height: 100%
+
+.sorting-links
+  color: $text
+  padding: 5px 0
+  position: relative
+  display: flex
   align-items: center
-  justify-content: center
+  font-weight: 500
+  &:hover
+    color: $accent
+
+.sorting-links.active
+  &:after
+    content: ''
+    margin: 0 0 0 auto
+    width: 20px
+    height: 20px
+    background: url("../img/checkbox-accent.svg") no-repeat center
+      size: contain
+    min-width: 20px
+
+
+.btn-catalog-mobile
+  width: 50%
+  margin: 0 -1px 0 0
+  border: 1px solid #DDE0DC
+  display: flex
+  align-items: center
+  justify-content: flex-start
   background: #FAFAFA
   color: #2A2D28
-  font-size: 16px
+  font-size: 14px
   font-weight: 500
-  padding: 12px
   cursor: pointer
+  padding: 12px 18px
+  &:last-child
+    margin: 0
 
 .btn-filter-icon
   display: flex
   align-items: center
   justify-content: center
   width: 20px
+  min-width: 20px
   height: 15px
   margin: 0 11px 0 0
 

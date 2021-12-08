@@ -125,6 +125,19 @@
   </form>
 </div>
 
+<div class="mobile-sorting mobile-wrapper">
+  <div class="sidebar-close">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#close"></use>
+    </svg>
+  </div>
+  <a href="#" class="sorting-links active">Просмотреть список товаров</a>
+  <a href="#" class="sorting-links">Самые дешевые наверху</a>
+  <a href="#" class="sorting-links">Самые дорогие наверху</a>
+  <a href="#" class="sorting-links">Cрок доставки</a>
+  <a href="#" class="sorting-links">Hаивысшая оценка</a>
+</div>
+
 <div class="mobile-menu mobile-wrapper">
   <div class="mobile-box">
     <ul class="menu">
@@ -245,6 +258,12 @@
       </svg>
     </div>
   </div>
+  <div class="phone-wrapper__mobile">
+    <svg class="svg-icon">
+      <use xlink:href="img/sprite.svg#phone"></use>
+    </svg>
+    <a href="tel:26-777-987" class="phone">26-777-987</a>
+  </div>
 </header>
 
 <section class="page page-catalog">
@@ -266,7 +285,11 @@
 
     <div class="page-catalog-wrapper w-100">
       <div class="sidebar">
-        <div class="sidebar-close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+        <div class="sidebar-close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </div>
         <div class="sidebar-title sidebar-box">
           <h3>Параметры</h3>
         </div>
@@ -509,10 +532,25 @@
 
       <div class="catalog-content">
 
-        <div class="btn-filter">
-          <div class="btn-filter-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#filter"></use></svg></div>
-          <div class="btn-filter-text">Фильтры</div>
+        <div class="catalog-mobile-nav">
+          <div class="btn-filter btn-catalog-mobile">
+            <div class="btn-filter-icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#filter"></use>
+              </svg>
+            </div>
+            <div class="btn-filter-text">Фильтры</div>
+          </div>
+          <div class="btn-catalog-mobile btn-sorting">
+            <div class="btn-filter-icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#sorting"></use>
+              </svg>
+            </div>
+            <div class="btn-filter-text">Сортировать</div>
+          </div>
         </div>
+
 
         <div class="sorting-line">
           <div class="sorting-box">
@@ -1292,6 +1330,8 @@
 </div>
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
+
+
 
 
 <script src="js/jquery.min.js"></script>
