@@ -309,7 +309,7 @@ $('.mobile-vehicle-chat-sms').on('click', function (e) {
     $('.welcome-popup').css('bottom', '0');
 });
 
-$('.welcome-popup__close').on('click', function (e) {
+$('.welcome-popup__close, .overlay').on('click', function (e) {
     e.preventDefault();
     $('.welcome-popup').css('bottom', '-100%');
     $('.overlay').fadeOut();

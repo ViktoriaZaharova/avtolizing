@@ -2722,7 +2722,12 @@ header {
   padding: 20px;
   background: #fff;
   overflow-y: auto;
-  height: 100%; }
+  height: 100%;
+  max-width: 270px; }
+  .mobile-sorting .sidebar-title h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #2A2D28; }
 
 .sorting-links {
   color: #656871;
