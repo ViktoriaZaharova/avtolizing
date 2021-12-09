@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -1212,30 +1213,43 @@
   </div>
   <div class="footer-center">
     <div class="container">
-      <div class="footer-box">
-        <h3>Больше на сайте</h3>
-        <ul class="footer-menu">
-          <li><a href="#">Автолизинг</a></li>
-          <li><a href="#">Выкуп авто</a></li>
-          <li><a href="#">Авто партнеров</a></li>
-          <li><a href="#">О нас</a></li>
-        </ul>
-      </div>
+      <div class="footer-row">
+        <div class="footer-box">
+          <h3>Больше на сайте</h3>
+          <ul class="footer-menu">
+            <li><a href="#">Автолизинг</a></li>
+            <li><a href="#">Выкуп авто</a></li>
+            <li><a href="#">Авто партнеров</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-box">
-        <h3>Безопасность</h3>
-        <ul class="footer-menu">
-          <li><a href="#">Правила пользования</a></li>
-          <li><a href="#">Политика безопасности</a></li>
-        </ul>
-      </div>
+        <div class="footer-box">
+          <h3>Безопасность</h3>
+          <ul class="footer-menu">
+            <li><a href="#">Правила пользования</a></li>
+            <li><a href="#">Политика безопасности</a></li>
+          </ul>
+        </div>
 
-      <div class="footer-box">
-        <h3>Предприятие</h3>
-        <ul class="footer-menu">
-          <li><p>SIA 'RP motors' 44103127443</p></li>
-          <li><p>Valmiera - Rīgas iela 62, LV-4201</p></li>
-        </ul>
+        <div class="footer-box">
+          <h3>Предприятие</h3>
+          <ul class="footer-menu">
+            <li><p>SIA 'RP motors' 44103127443</p></li>
+            <li><p>Valmiera - Rīgas iela 62, LV-4201</p></li>
+          </ul>
+        </div>
+
+        <div class="btn-group-map">
+          <a href="#" class="btn btn-grey btn-border-grey">
+            <span class="btn-text">Открыть в google maps</span><span class="btn-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+          </a>
+          <a href="#" class="btn btn-grey btn-border-grey">
+            <span class="btn-text">Открыть в Waze</span><span class="btn-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+          </a>
+        </div>
       </div>
 
       <div class="map" id="map"></div>
@@ -1331,7 +1345,84 @@
 <!-- Пoдлoжкa -->
 <div class="overlay"></div>
 
+<!--call mobile-->
+<div class="welcome-popup">
+  <a href="#" class="btn btn-grey">
+    <span class="btn-arrow phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+    <span class="btn-text">Связаться с нами сейчас</span>
+  </a>
+  <a href="#" class="btn btn-grey">
+    <span class="btn-arrow whatsapp-icon"><svg class="svg-icon"><use
+        xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
+    <span class="btn-text">Написать на WhatsApp</span>
+  </a>
+  <a href="#" class="btn btn-grey">
+    <span class="btn-arrow telegram-icon"><svg class="svg-icon"><use
+        xlink:href="img/sprite.svg#telegram"></use></svg></span>
+    <span class="btn-text">Написать в Telegram</span>
+  </a>
+  <a href="#" class="btn btn-grey">
+    <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail2"></use></svg></span>
+    <span class="btn-text">Написать на E-mail</span>
+  </a>
 
+  <a href="#" class="welcome-popup__close">Отменить</a>
+</div>
+
+<a href="#" class="mobile-vehicle-chat-sms btn btn-accent">
+  <span class="btn-text">сВЯЖИТЕСЬ С НАМИ</span>
+  <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+</a>
+
+
+<!--cookie-->
+<div class="cookie">
+  <div class="container">
+    <div class="cookie-box">
+      <h3>Šī tīmekļa vietne izmanto sīkfailus</h3>
+      <div class="box-text">
+        <p>Mēs izmantojam sīkdatnes, lai nodrošinātu mājaslapas funkcionalitāti, analizētu apmeklējumu, rādītu
+          pielāgotusaturu un reklāmas. Vairāk lasi <a href="#" target="_blank" class="d-inline text-decoration color-accent font-500">Sīkdatņu
+            politikā.</a></p>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn btn-border-grey btn-grey btn-close-cookie">Noraidīt</a>
+        <a href="#" class="btn btn-border-grey btn-grey">Ļaut atlasi</a>
+        <a href="#" class="btn btn-accent">Atļaut visu</a>
+      </div>
+
+      <form method="post" class="form-cookie">
+        <div class="form-group">
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Obligātās sīkdatnes </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Analītiskās sīkdatnes </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Mārketinga un mērķauditorijas sīkdatnes </span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Mārketings</span>
+          </label>
+        </div>
+        <div class="form-cookie-box">
+          <a href="#" target="_blank" class="font-500 text-decoration color-accent">Sīkdatņu
+            politikā.</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>
@@ -1339,6 +1430,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/common.js"></script>
 
 </body>
