@@ -1,15 +1,13 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
-
-/* Large Devices, Wide Screens */
+/*==========  Desktop First  ==========
+/* Large Devices, Wide Screens
 @media only screen and (max-width: 1800px)
   .btn-subscribe
     right: -250px
 
-  footer
-    .contacts-item
-      margin: 0 50px 0 0
+  footer .contacts-item
+    margin: 0 50px 0 0
 
 @media only screen and (max-width: 1680px)
   .footer-box
@@ -28,7 +26,6 @@
   .btn-group-map
     padding: 0 0 0 175px
 
-
 @media only screen and (max-width: 1340px)
   .btn-subscribe
     padding: 0 70px 0 60px
@@ -45,6 +42,7 @@
 
   .map
     position: relative
+    -webkit-clip-path: none
     clip-path: none
     width: calc(100% + 30px)
     margin: 0 -15px 0
@@ -53,6 +51,8 @@
     height: 200px
 
   .footer-row
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
     justify-content: space-between
 
   .btn-group-map
@@ -61,7 +61,10 @@
 
   .footer-center
     padding: 36px 0 0
+
     .container
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
       justify-content: space-between
 
   .footer-box
@@ -69,6 +72,7 @@
 
   .btn-subscribe
     position: relative
+    -webkit-clip-path: none
     clip-path: none
     width: calc(100% + 30px)
     margin: 15px -15px 0
@@ -77,7 +81,10 @@
     top: 0
     bottom: 0
     right: 0
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
+
     .btn-text
       margin: 0 12px 0 0
       font-size: 17px
@@ -99,11 +106,17 @@
   .professional-images__content
     font-size: 14px
     max-width: 266px
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: end
+    -ms-flex-align: end
     align-items: flex-end
     text-align: right
     padding: 5px 20px 10px
     bottom: 20px
+
     p
       font-size: 44px
       margin: 0
@@ -114,6 +127,7 @@
   .professional
     &:before
       display: none
+
     &:after
       font-size: 150px
       right: -180px
@@ -122,7 +136,8 @@
   .advantages
     &:before
       background: radial-gradient(102.73% 102.73% at 76.87% -71.29%, #FFFFFF 0%, rgba(214, 141, 31, 0) 98.36%), linear-gradient(358.33deg, rgba(44, 51, 61, 0.928261) 0.72%, rgba(44, 51, 61, 0.828262) 0.72%, #2C333D 0.72%, rgba(44, 51, 61, 0) 96.08%), linear-gradient(95.73deg, #2C333D 12.53%, rgba(44, 51, 61, 0.928261) 26.45%, rgba(44, 51, 61, 0.828262) 38.34%, rgba(44, 51, 61, 0) 94.48%), url("../img/bg1.png") center
-        size: cover
+      background-size: cover
+
     h5
       font-size: 18px
 
@@ -130,11 +145,12 @@
     margin: 0 0 30px
     padding: 16px 20px 23px
 
-
   .form-filter button
     max-width: 240px
+
     &:after
       width: 88px
+
     .btn-arrow
       margin: 0 0 0 20px
 
@@ -162,10 +178,7 @@
   header .phone
     font-size: 16px
 
-  .links-active
-    font-size: 12px
-
-  .menu
+  .links-active, .menu
     font-size: 12px
 
   .btn-phone
@@ -173,9 +186,12 @@
     height: 65px
 
   .form-footer
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
+
     button
       max-width: none
+
     .checkbox
       width: 100%
       padding: 0
@@ -190,11 +206,7 @@
   .product-gallery-preview
     padding: 0 30px
 
-  .conditions-product
-    .form
-      max-width: none
-
-  .checkout-form
+  .conditions-product .form, .checkout-form
     max-width: none
 
   .page-checkout
@@ -206,22 +218,23 @@
   .seller-item-location
     margin: 0 auto 5px 11px
 
-/* Medium Devices, Desktops */
+/* Medium Devices, Desktops
 @media only screen and (max-width: 1050px)
   .form-filter
     label
       max-width: 49%
       margin: 0 0 10px
+
     .inp-group-item
       max-width: 50%
       margin: 0
+
     button
       max-width: none
       margin: 15px auto 0
 
   .range_val, .inp-group
     width: 100%
-
 
 @media only screen and (max-width: 992px)
   .footer-bottom
@@ -235,28 +248,37 @@
       width: 100%
       border-bottom: 1px solid #DDE0DC
       margin: 0 0 16px
+
     .contacts-item
       margin: 0 auto 11px
+
       &:last-child
         margin: 0 auto
 
-  .footer-top
-    .container
-      flex-direction: column
-      align-items: center
-      &:before
-        display: none
+  .footer-top .container
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+    &:before
+      display: none
 
   .btn-phone
     width: 75px
     height: 51px
     margin: 0 7px 0 0
+
     .svg-icon
       width: 20px
       height: 20px
 
   .callback
     padding: 70px 0
+
     &:before
       display: none
 
@@ -270,11 +292,14 @@
     width: 100%
     padding: 0
     margin: 0 0 34px
+
     .box-text
       margin: 18px 0 12px
       font-size: 14px
 
   .professional-images
+    -webkit-box-ordinal-group: 2
+    -ms-flex-order: 1
     order: 1
     width: calc(100% + 30px)
     margin: 0 -15px
@@ -283,17 +308,17 @@
 
   .professional
     padding: 54px 0 0
+
     .btn
       margin: 44px 0 0
 
   h2
     font-size: 24px
 
-  .title-decor
-    &:before
-      height: 3px
-      width: 80px
-      left: -15px
+  .title-decor:before
+    height: 3px
+    width: 80px
+    left: -15px
 
   .btn
     height: 49px
@@ -304,6 +329,7 @@
 
   .list-number
     font-size: 18px
+
     .number
       margin: 0 20px 0 0
 
@@ -341,6 +367,7 @@
     height: 303px
     top: auto
     bottom: 0
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%)
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%)
 
   .main-slider__item-img
@@ -353,7 +380,6 @@
 
   .logo
     max-width: 210px
-
 
   .header-row
     width: calc(100% - 210px)
@@ -376,12 +402,11 @@
   .btn-event
     height: 100px
 
-  .btn-event span strong
-    font-size: 20px
+    span strong
+      font-size: 20px
 
-  .page-product-box
-    h3
-      font-size: 24px
+  .page-product-box h3
+    font-size: 24px
 
   .page-product-box__head
     padding: 0 10px 10px
@@ -410,11 +435,7 @@
     height: 35px
     font-size: 18px
 
-  .payment-month
-    p
-      font-size: 11px
-
-  .currency
+  .payment-month p, .currency
     font-size: 11px
 
   .calculate-box .inp-group-item input
@@ -424,16 +445,21 @@
   .page-product-information .new-price
     font-size: 35px
 
-  .calculate-box h3
-    font-size: 18px
+  .calculate-box
+    h3
+      font-size: 18px
 
-  .calculate-box .inp-group-item
-    font-size: 10px
+    .inp-group-item
+      font-size: 10px
 
   .seller-item
     font-size: 17px
 
-  .page-news:after, .page-news:before, .news-img-decor:before
+  .page-news
+    &:after, &:before
+      display: none
+
+  .news-img-decor:before
     display: none
 
   .news-img
@@ -453,6 +479,7 @@
 
   .page-article-item
     margin: 30px 0 0
+
     h3
       font-size: 18px
 
@@ -472,12 +499,14 @@
 
   .list-tags li
     margin: 0 10px 10px 0
+
     &:last-child
       margin: 0 0 10px
+
     a
       font-size: 14px
 
-/* Small Devices, Tablets */
+/* Small Devices, Tablets
 @media only screen and (max-width: 870px)
   .header-row
     display: none
@@ -490,14 +519,19 @@
     display: block
 
   header
-    //height: 61px
-    background: $accent
+    background: #8FBA44
     border: none
+    -webkit-box-shadow: none
     box-shadow: none
+
     .container
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
 
   .btn-search, .btn-burger
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
 
   .page-product-gallery
@@ -508,6 +542,7 @@
     width: 100%
     padding: 0
     margin: 22px 0 0
+
     .page-product-information__head
       display: none
 
@@ -517,18 +552,20 @@
   .page-product-information__head
     padding: 0 0 14px
 
-  .home .container:before
-    left: -15px
-    top: 50%
-    transform: translate(0,-50%)
-    width: 80px
-    height: 3px
+  .home .container
+    &:before
+      left: -15px
+      top: 50%
+      -webkit-transform: translate(0, -50%)
+      transform: translate(0, -50%)
+      width: 80px
+      height: 3px
 
-  .home .container:after
-    top: 34px
-    right: -15px
-    height: 3px
-    width: 60px
+    &:after
+      top: 34px
+      right: -15px
+      height: 3px
+      width: 60px
 
   .decor-img2
     width: 49px
@@ -537,6 +574,7 @@
     bottom: 14px
     top: auto
     background: url("../img/decor2.png") repeat center top
+
     img
       display: none
 
@@ -546,8 +584,10 @@
     right: auto
     left: 0
     top: 58%
-    transform: translate(0,-50%)
+    -webkit-transform: translate(0, -50%)
+    transform: translate(0, -50%)
     background: url("../img/decor1.png") repeat center top
+
     img
       display: none
 
@@ -558,22 +598,27 @@
     max-width: none
     text-align: center
     padding: 50px 0 31px
+
     h1
       display: none
+
     p
       font-size: 18px
       text-align: center
+
     .btn
       margin: 16px auto 0
-      background: $accent
-      border-color: $accent
+      background: #8FBA44
+      border-color: #8FBA44
       color: #fff
+
       .btn-arrow
         fill: #fff
 
   .title-mobile
     display: block
     width: 100%
+
     h1
       display: block
       margin: 10px auto 171px
@@ -617,14 +662,18 @@
   .list-social
     display: none
 
-
-
 @media only screen and (max-width: 768px)
   .social-content
     padding: 35px 20px 28px
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
     text-align: center
+
     h3
       text-align: center
       margin: 0 auto 55px
@@ -633,6 +682,8 @@
 
   .list-social-subscribe
     width: 100%
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
     justify-content: space-between
 
     li
@@ -640,6 +691,7 @@
 
   .conditions
     padding: 40px 20px
+
     h2
       font-size: 18px
       margin: 0 auto 10px
@@ -653,13 +705,16 @@
 
   .btn-accent
     font-size: 15px
+
     .btn-arrow
       margin: 0 0 0 20px
 
   .form
     max-width: none
+
     .checkbox
       margin: 19px 0 0
+
     input, .select-checkout
       height: 45px
 
@@ -702,32 +757,27 @@
   .filter-wrapper
     margin: 0 0 10px
 
-  .title-wrapper
-    h2
-      font-size: 21px
+  .title-wrapper h2
+    font-size: 21px
 
   .button-group .btn
     height: 40px
     font-size: 14px
     padding: 0 20px
 
-
   .catalog-car
     padding: 20px 0 40px
 
-  .filter-wrapper
-    h2
-      font-size: 21px
-      margin: 0 0 12px
-
-  //.main-content
-  //  max-width: 400px
+  .filter-wrapper h2
+    font-size: 21px
+    margin: 0 0 12px
 
   .main-slider__item-img
     width: 277px
     height: 146px
     bottom: 147px
     top: auto
+    -webkit-transform: none
     transform: none
 
   .sidebar
@@ -742,6 +792,8 @@
     height: 100%
 
   .btn-filter, .sidebar-close
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
 
   .catalog-content
@@ -760,20 +812,24 @@
   .sidebar-box .inp-group-item
     font-size: 13px
 
-  .sidebar-box .inp-group-item input
-    width: calc(100% - 25px)
+    input
+      width: calc(100% - 25px)
 
-  .sidebar-box .inp-group-item
     width: 49%
 
   .brands-slider__group
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -ms-flex-item-align: start
     align-self: flex-start
 
   .brands-slider__box
     width: 160px
     height: 100px
     margin: 0 20px 20px 0
+
     &:last-child
       margin-bottom: 0
 
@@ -791,12 +847,15 @@
 
   .btn-event
     padding: 0 30px
+
     .btn-icon
       width: 14px
       height: 12px
       margin: 0 0 0 12px
 
   .characteristics-wrap
+    -webkit-column-count: 3
+    -moz-column-count: 3
     column-count: 3
 
   .page-product-box
@@ -815,17 +874,20 @@
 
   .checkout-form
     margin: 24px 0 0
+
     label
       margin: 0 0 25px
+
     input
       padding: 0 13px
       font-size: 14px
+
     .label-wrapper
       padding: 0 13px
-    .list-checkbox
-      .checkbox
-        margin: 0
-        font-size: 14px
+
+    .list-checkbox .checkbox
+      margin: 0
+      font-size: 14px
 
   .input-description
     padding: 2px 13px
@@ -835,8 +897,10 @@
 
   .checkout-head
     padding: 20px
+
     .btn
       font-size: 16px
+
     .btn-arrow
       margin: 0 0 0 15px
       width: 18px
@@ -861,22 +925,32 @@
     right: 13px
 
   .catalog-mobile-nav
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
 
   .mobile-vehicle-chat-sms
     .btn-arrow
       margin: 0
+
     &:after
       width: 100px
 
-/* Extra Small Devices, Phones */
+  .catalog-mobile-line
+    display: flex
+
+/* Extra Small Devices, Phones
 @media only screen and (max-width: 650px)
   .button-group
     width: 100%
     margin: 10px 0 0
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
     justify-content: space-between
+
     .btn
       margin: 0 0 5px 0
+
       &:last-child
         margin: 0 0 5px
 
@@ -890,27 +964,35 @@
     line-height: 100%
     padding: 0
     margin: 0 0 11px
+
     &:last-child
       margin: 0
+
     &:first-child
       border: none
-    &:first-child, &:last-child
       width: 100%
-      li
-        margin: 0 0 10px
-        span
-          width: 55%
-          font-size: 11px
-        p
-          width: 45%
 
+    &:last-child
+      width: 100%
+
+    &:first-child li, &:last-child li
+      margin: 0 0 10px
+
+    &:first-child li span, &:last-child li span
+      width: 55%
+      font-size: 11px
+
+    &:first-child li p, &:last-child li p
+      width: 45%
 
   .requisites-body
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
 
   .requisites-head
     padding: 15px
     text-align: center
+
     h4
       font-size: 16px
 
@@ -919,6 +1001,7 @@
 
   .card-banner
     padding: 20px 27px 45px
+
     h3
       margin: 0 auto 29px
       font-size: 25px
@@ -936,24 +1019,34 @@
 
   .footer-box
     width: 100%
+
     h3
       font-size: 16px
       margin: 0 0 15px
-    &:first-child
-      .footer-menu
-        display: flex
-        align-items: flex-start
-        justify-content: space-between
-        flex-wrap: wrap
 
-        li
-          width: 50%
-          &:first-child, &:nth-child(3)
-            order: -1
+    &:first-child .footer-menu
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: start
+      -ms-flex-align: start
+      align-items: flex-start
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
 
-  .footer-menu
-    li
-      margin: 0 0 10px
+      li
+        width: 50%
+
+        &:first-child, &:nth-child(3)
+          -webkit-box-ordinal-group: 0
+          -ms-flex-order: -1
+          order: -1
+
+  .footer-menu li
+    margin: 0 0 10px
 
   .callback
     padding: 40px 0
@@ -962,31 +1055,43 @@
     max-width: none
 
   .professional-advantages
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
 
   .advantages
     padding: 50px 0 45px
-    h2
-      &:before
-        left: 50%
-        transform: translate(-50%,0)
+
+    h2:before
+      left: 50%
+      -webkit-transform: translate(-50%, 0)
+      transform: translate(-50%, 0)
+
     h5
       margin: 6px 0 0
+
       &:before
         width: 19px
         height: 35px
         margin: 0 13px 0 0
+
       &:after
         right: -15px
 
-
   .advantages-content
     padding: 0
+
     .list-number
       li
         &:nth-child(1), &:nth-child(3)
+          -webkit-box-ordinal-group: initial
+          -ms-flex-order: initial
           order: initial
+
       .number
         width: 45px
         height: 45px
@@ -994,9 +1099,14 @@
 
   .list-number
     margin: 25px 0 0
+
     li
       width: 100%
       margin: 0 0 30px
+
+  .page-catalog-wrapper
+    .col-3
+      width: 50%
 
   .col-3
     width: 100%
@@ -1004,9 +1114,8 @@
   .card-img
     height: 174px
 
-  .form-filter
-    button
-      height: 50px
+  .form-filter button
+    height: 50px
 
   .select
     height: 50px
@@ -1017,6 +1126,7 @@
     height: 55px
     padding: 6px 9px
     font-size: 10px
+
     input
       font-size: 16px
       margin: 2px 0 0
@@ -1027,9 +1137,8 @@
   .card-title
     min-height: auto
 
-  .page-top
-    .links-next
-      display: none
+  .page-top .links-next
+    display: none
 
   .breadcrumbs
     font-size: 14px
@@ -1041,6 +1150,7 @@
     h2
       margin: 0 0 11px
       font-size: 24px
+
     .box-text
       font-size: 12px
 
@@ -1048,14 +1158,17 @@
     width: 130px
     height: 86px
     margin: 0 10px 20px
+
     &:last-child
       margin-bottom: 0
 
   .page-contacts-box
     width: 100%
+
     h3
       font-size: 16px
       margin: 0 0 10px
+
       &:before
         margin: 0 13.5px 0 0
 
@@ -1066,6 +1179,7 @@
   .page h1
     font-size: 21px
     margin: 0 0 23px
+
     &:before
       width: 13px
       height: 20px
@@ -1077,24 +1191,30 @@
     height: 300px
 
   .page-product-seller
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
     padding: 9px 10px
 
   .seller-item
     margin: 0 0 5px
+
     &:last-child
       margin: 0
 
-  .page-product
-    h1
-      margin: 0 0 13px
+  .page-product h1
+    margin: 0 0 13px
 
-  .page-product-wrapper .old-price
-    font-size: 16px
+  .page-product-wrapper
+    .old-price
+      font-size: 16px
 
-  .page-product-wrapper .new-price
-    font-size: 35px
+    .new-price
+      font-size: 35px
 
   .product-gallery-item
     height: 193px
@@ -1110,6 +1230,7 @@
     width: calc(100% + 40px)
     margin: 0 -20px
     padding: 32px 20px 24px
+
     h3
       font-size: 21px
       margin: 0 auto 15px
@@ -1121,11 +1242,13 @@
   .buttons-events
     margin: 40px 0 60px
     font-size: 16px
+
     strong
       font-size: 18px
-    span
-      strong
-        font-size: 21px
+
+    span strong
+      font-size: 21px
+
     .container
       padding: 0
 
@@ -1136,10 +1259,12 @@
     h4
       font-size: 14px
       margin: 0 0 19px
+
     h3
       font-size: 18px
       text-align: center
       margin: 0 auto
+
     h5
       font-size: 16px
       margin: 0 0 5px
@@ -1155,10 +1280,13 @@
     padding: 0 10px 10px
 
   .characteristics-wrap
+    -webkit-column-count: 1
+    -moz-column-count: 1
     column-count: 1
 
   .characteristics-wrap-body
     padding: 0
+
     h4
       margin: 0
       padding: 15px
@@ -1167,12 +1295,19 @@
     padding: 15px 19px
     margin: 0
     border-top: 1px solid #DDE0DC
+
     ul
       display: none
+
     h5
       margin: 0
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+
       &:after
         content: ''
         display: inline-block
@@ -1180,39 +1315,51 @@
         width: 8px
         height: 8px
         background: url("../img/arrow-bottom.svg") no-repeat center
-          size: contain
-    h5.click
-      &:after
+        background-size: contain
+
+      &.click:after
+        -webkit-transform: rotate(180deg)
         transform: rotate(180deg)
+
     ul
       padding: 7px 0 0
+
       li
         margin: 0 0 1px
 
   .page-thanks
     padding: 60px 0 100px
+
     .thanks-icon
       width: 78px
       height: 78px
       margin: 0 auto 35px
       padding: 22px
+
     .box-text
       font-size: 14px
+
     .btn
       margin: 55px auto 0
 
   .phone-item
     font-size: 14px
+
     .svg-icon
       width: 14px
       height: 14px
 
-  .checkout-form
-    .list-checkbox
-      flex-direction: column
-      align-items: flex-start
-      li
-        margin: 0 0 10px
+  .checkout-form .list-checkbox
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
+    align-items: flex-start
+
+    li
+      margin: 0 0 10px
 
   .btn-step
     margin: 0
@@ -1228,6 +1375,8 @@
     font-size: 16px
 
   .links-prev
+    -webkit-box-ordinal-group: 2
+    -ms-flex-order: 1
     order: 1
     margin: 20px auto 0
 
@@ -1255,14 +1404,17 @@
 
   .recommended-news
     padding: 50px 0
+
     h2
       font-size: 24px
 
   .list-schedule
     margin: 10px 0 0
     width: 100%
+
     li
       margin: 0 0 0 10px
+
       &:first-child
         margin: 0
 
@@ -1270,9 +1422,15 @@
     top: -16px
 
   .btn-group-map
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
     margin: 6px 0 15px
+
     .btn
       margin: 0 0 10px
       height: 43px
