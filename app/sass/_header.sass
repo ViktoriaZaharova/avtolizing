@@ -3,31 +3,35 @@
 header
   box-shadow: inset 0px -1px 0px #DDE0DC
   .contacts-item
-    margin: 0 53px 0 0
+    margin: 0 42px 0 0
+    &:last-child
+      margin: 0
   .phone-wrapper
     margin: 0
-    &:before
-      content: ''
-      display: inline-block
-      margin: 0 13px 0 0
-      width: 17px
-      height: 32px
-      background: $accent
-      clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
+    //&:before
+    //  content: ''
+    //  display: inline-block
+    //  margin: 0 13px 0 0
+    //  width: 17px
+    //  height: 32px
+    //  background: $accent
+    //  clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
   .phone
     color: #2A2D28
     font-size: 22px
   .btn-phone
-    margin: 0 0 0 10px
+    margin: 0 0 0 20px
+
 
 .logo
   display: flex
   align-items: center
   justify-content: center
-  max-width: 250px
+  max-width: 200px
   width: 100%
   margin: 0 0 0 -60px
-
+  img
+    width: 100%
 
 .header-row
   display: flex
@@ -53,9 +57,10 @@ header
   font-size: 13px
   font-weight: 500
   text-transform: uppercase
-  margin: 0 0 0 auto
+  margin: 0 auto
+  //margin: 0 0 0 auto
   li
-    margin: 0 30px 0 0
+    margin: 0 20px 0 0
     &:last-child
       margin: 0
     a
@@ -75,11 +80,11 @@ header
       &:hover
         color: #656871
         &:before
-          width: 80px
+          width: 100%
     .active
       color: #656871
       &:before
-        width: 80px
+        width: 100%
 
 .menu
   display: flex
@@ -89,11 +94,9 @@ header
   font-size: 14px
   font-weight: bold
   text-transform: uppercase
-  margin: 0 auto 0 0
+  width: 100%
+  justify-content: space-between
   li
-    margin: 0 35px 0 0
-    &:last-child
-      margin: 0
     a
       color: #2A2D28
       padding: 24px 0 27px
