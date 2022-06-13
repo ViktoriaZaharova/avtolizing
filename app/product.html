@@ -17,7 +17,6 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-  <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
@@ -126,14 +125,113 @@
   </form>
 </div>
 
+<div class="mobile-sorting mobile-wrapper">
+  <form method="post" class="form-search">
+    <label><input type="text" placeholder="Поиск..." name="search"></label>
+    <button type="submit">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+  </form>
+
+  <form method="post" class="form-filter">
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Город">Город</option>
+        <option value="Город">Город</option>
+        <option value="Город">Город</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Марка">Марка</option>
+        <option value="Марка">Марка</option>
+        <option value="Марка">Марка</option>
+        <option value="Марка">Марка</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Модель">Модель</option>
+        <option value="Модель">Модель</option>
+        <option value="Модель">Модель</option>
+        <option value="Модель">Модель</option>
+      </select>
+    </label>
+    <label class="w-50">
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Год, от">Год, от</option>
+      </select>
+    </label>
+    <label class="w-50">
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Год, до">Год, до</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Топливо">Топливо</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Трансмиссия">Трансмиссия</option>
+      </select>
+    </label>
+    <label>
+          <span class="select-arrow"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
+      <select name="select" class="select">
+        <option value="Тип кузова">Тип кузова</option>
+      </select>
+    </label>
+
+    <div class="range_val">
+      <div class="inp-group">
+        <label class="inp-group-item">
+          <span class="input-text-range">цена,  от</span>
+          <input type="text" name="dec" class="dec1">
+        </label>
+        <label class="inp-group-item">
+          <span class="input-text-range">цена,  до</span>
+          <input type="text" name="dec" class="dec2">
+        </label>
+      </div>
+      <div class="slider-range slider-range1"></div>
+    </div>
+
+    <button type="submit" class="btn btn-accent">
+      <span class="btn-text">найти авто</span>
+      <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
+    </button>
+  </form>
+</div>
+
 <div class="mobile-menu mobile-wrapper">
   <div class="mobile-box">
     <ul class="menu">
       <li><a href="#">автолизинг</a></li>
-      <li><a href="#" class="active">Выкуп авто</a></li>
+      <li><a href="#">автокредит</a></li>
       <li><a href="#">авто партнеров</a></li>
+      <li><a href="#" class="active">Выкуп авто</a></li>
       <li><a href="#">о нас</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a href="news.html">новости </a></li>
+      <li><a href="contacts.html">Контакты</a></li>
     </ul>
   </div>
 
@@ -144,20 +242,20 @@
       <a href="#modal__callback" class="links-active open_modal">
         Подать заявку на лизинг</a>
     </div>
-
-    <a href="mailto:info@manslizings.lv" class="contacts-item">
-      <span>E-mail:</span>info@manslizings.lv
-    </a>
     <div class="contacts-item">
       <span>Режим работы:</span> 9:00 - 22:00
     </div>
+    <a href="mailto:info@manslizings.lv" class="contacts-item">
+      <span>E-mail:</span>info@manslizings.lv
+    </a>
+
   </div>
 
   <div class="mobile-box">
     <ul class="list-language">
-      <li><a href="#">LATVIEŠU</a></li>
-      <li><a href="#" class="active">РУССКИЙ</a></li>
-      <li><a href="#">ENGLISH</a></li>
+      <li><a href="#">LAT</a></li>
+      <li><a href="#" class="active">РУС</a></li>
+      <li><a href="#">ENG</a></li>
     </ul>
 
     <ul class="list-social">
@@ -192,13 +290,17 @@
 
 <header>
   <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <a href="tel:26-777-987" class="phone-wrapper__mobile">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+    </a>
     <div class="btn-search">
       <svg class="svg-icon">
         <use xlink:href="img/sprite.svg#search"></use>
       </svg>
     </div>
-
-    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
     <div class="header-row">
       <div class="header-top">
         <a href="mailto:info@manslizings.lv" class="contacts-item">
@@ -209,18 +311,9 @@
         </div>
 
         <ul class="list-language">
-          <li><a href="#">LATVIEŠU</a></li>
-          <li><a href="#" class="active">РУССКИЙ</a></li>
-          <li><a href="#">ENGLISH</a></li>
-        </ul>
-      </div>
-      <div class="header-bottom">
-        <ul class="menu">
-          <li><a href="#">автолизинг</a></li>
-          <li><a href="#" class="active">Выкуп авто</a></li>
-          <li><a href="#">авто партнеров</a></li>
-          <li><a href="#">о нас</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#">LAT</a></li>
+          <li><a href="#" class="active">РУС</a></li>
+          <li><a href="#">ENG</a></li>
         </ul>
 
         <div class="phone-wrapper">
@@ -238,6 +331,17 @@
           </a>
         </div>
       </div>
+      <div class="header-bottom">
+        <ul class="menu">
+          <li><a href="#">автолизинг</a></li>
+          <li><a href="#">автокредит</a></li>
+          <li><a href="#">авто партнеров</a></li>
+          <li><a href="#" class="active">Выкуп авто</a></li>
+          <li><a href="#">о нас</a></li>
+          <li><a href="#">новости </a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="btn-burger">
@@ -246,8 +350,8 @@
       </svg>
     </div>
   </div>
-</header>
 
+</header>
 <section class="page page-product">
   <div class="container">
 
@@ -529,9 +633,9 @@
         </div>
       </div>
 
-      <a href="mailto:info@manslizings.lv" class="contacts-item">
-        <span>E-mail:</span>info@manslizings.lv
-      </a>
+      <!--      <a href="mailto:info@manslizings.lv" class="contacts-item">-->
+      <!--        <span>E-mail:</span>info@manslizings.lv-->
+      <!--      </a>-->
       <div class="contacts-item">
         <span>Режим работы:</span> 9:00 - 22:00
       </div>

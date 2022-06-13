@@ -17,7 +17,6 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-  <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/main.css">
@@ -26,9 +25,7 @@
 
 <body>
 
-<div class="overlay-mobile">
-
-</div>
+<div class="overlay-mobile"></div>
 
 <div class="mobile-filter mobile-wrapper">
   <form method="post" class="form-search">
@@ -228,10 +225,12 @@
   <div class="mobile-box">
     <ul class="menu">
       <li><a href="#">автолизинг</a></li>
-      <li><a href="#" class="active">Выкуп авто</a></li>
+      <li><a href="#">автокредит</a></li>
       <li><a href="#">авто партнеров</a></li>
+      <li><a href="#" class="active">Выкуп авто</a></li>
       <li><a href="#">о нас</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a href="news.html">новости </a></li>
+      <li><a href="contacts.html">Контакты</a></li>
     </ul>
   </div>
 
@@ -242,20 +241,20 @@
       <a href="#modal__callback" class="links-active open_modal">
         Подать заявку на лизинг</a>
     </div>
-
-    <a href="mailto:info@manslizings.lv" class="contacts-item">
-      <span>E-mail:</span>info@manslizings.lv
-    </a>
     <div class="contacts-item">
       <span>Режим работы:</span> 9:00 - 22:00
     </div>
+    <a href="mailto:info@manslizings.lv" class="contacts-item">
+      <span>E-mail:</span>info@manslizings.lv
+    </a>
+
   </div>
 
   <div class="mobile-box">
     <ul class="list-language">
-      <li><a href="#">LATVIEŠU</a></li>
-      <li><a href="#" class="active">РУССКИЙ</a></li>
-      <li><a href="#">ENGLISH</a></li>
+      <li><a href="#">LAT</a></li>
+      <li><a href="#" class="active">РУС</a></li>
+      <li><a href="#">ENG</a></li>
     </ul>
 
     <ul class="list-social">
@@ -290,13 +289,17 @@
 
 <header>
   <div class="container">
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <a href="tel:26-777-987" class="phone-wrapper__mobile">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
+    </a>
     <div class="btn-search">
       <svg class="svg-icon">
         <use xlink:href="img/sprite.svg#search"></use>
       </svg>
     </div>
-
-    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
     <div class="header-row">
       <div class="header-top">
         <a href="mailto:info@manslizings.lv" class="contacts-item">
@@ -346,12 +349,7 @@
       </svg>
     </div>
   </div>
-  <div class="phone-wrapper__mobile">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#phone"></use>
-    </svg>
-    <a href="tel:26-777-987" class="phone">26-777-987</a>
-  </div>
+
 </header>
 
 <main class="home">
@@ -371,7 +369,7 @@
             </div>
             <p>Серьезный подход к автомобилю Вашей мечты!</p>
 
-            <a href="#" class="btn btn-border"><span class="btn-text">Узнать больше</span><span class="btn-arrow"><svg
+            <a href="#" class="btn btn-green"><span class="btn-text">Узнать больше</span><span class="btn-arrow"><svg
                 class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
           </div>
         </div>
@@ -379,7 +377,7 @@
         <div class="decor-img decor-img2"><img src="img/decor2.png" alt=""></div>
         <div class="main-slider__item-img"><img src="img/car1.png" alt=""></div>
       </div>
-      
+
 
     </div>
     <div class="slide">
@@ -397,7 +395,7 @@
             </div>
             <p>Серьезный подход к автомобилю Вашей мечты!</p>
 
-            <a href="#" class="btn btn-border"><span class="btn-text">Узнать больше</span><span class="btn-arrow"><svg
+            <a href="#" class="btn btn-green"><span class="btn-text">Узнать больше</span><span class="btn-arrow"><svg
                 class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
           </div>
         </div>
@@ -421,7 +419,7 @@
             </div>
             <p>Серьезный подход к автомобилю Вашей мечты!</p>
 
-            <a href="#" class="btn btn-border"><span class="btn-text">Узнать больше</span><span class="btn-arrow"><svg
+            <a href="#" class="btn btn-green"><span class="btn-text">Узнать больше</span><span class="btn-arrow"><svg
                 class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
           </div>
         </div>
@@ -486,524 +484,1065 @@
     <div class="title-wrapper">
       <h2>Каталог автомобилей: </h2>
       <div class="button-group">
+        <a href="#" class="btn btn-brown">Скоро в продаже</a>
         <a href="#" class="btn btn-red">Акция</a>
-        <a href="#" class="btn btn-grey">всего в каталоге: 298 моделей</a>
+        <a href="#" class="btn btn-grey btn-all-models">всего в каталоге: 298 моделей</a>
+
+        <div class="all-models-result">всего : 298 моделей</div>
+
+        <ul class="tabs tabs-catalog">
+          <li class="active"><a href="#tab1">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#cube-tab"></use>
+            </svg>
+          </a></li>
+          <li><a href="#tab2">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#line-tab"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="tab_container">
+      <div id="tab1" class="tab_content tab_content-col active">
+        <div class="row">
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car2.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">BMW 320</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car3.png" alt=""></a>
+
+              <div class="card-body">
+                <div class="card-location"><img src="img/country-flags.png" alt=""></div>
+                <a href="#" class="card-title">Toyota RAV4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car4.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Audi A4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car5.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">BMW 320</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-3-100 mb-30">
+            <div class="card-banner">
+              <img src="img/banner-card.png" alt="" class="card-banner__bg">
+              <div class="card-banner__content">
+                <h3>Низкие % ставки! Быстрое рассмотрение!</h3>
+                <a href="#" class="btn btn-accent">
+                  <span class="btn-text">Подать заявку</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car6.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Toyota RAV4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car8.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">BMW 320</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car9.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Toyota RAV4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car10.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Audi A4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-border-grey btn-border-green btn-all">Больше автомобилей</a>
+      </div>
+      <div id="tab2" class="tab_content">
+        <div class="row">
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car2.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">BMW 320</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car3.png" alt=""></a>
+
+              <div class="card-body">
+                <div class="card-location"><img src="img/country-flags.png" alt=""></div>
+                <a href="#" class="card-title">Toyota RAV4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car4.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Audi A4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car5.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">BMW 320</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car6.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Toyota RAV4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card-banner">
+              <img src="img/banner-card.png" alt="" class="card-banner__bg">
+              <div class="card-banner__content">
+                <h3>Низкие % ставки! Быстрое рассмотрение!</h3>
+                <a href="#" class="btn btn-accent">
+                  <span class="btn-text">Подать заявку</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car8.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">BMW 320</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car9.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Toyota RAV4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-30">
+            <div class="card">
+              <ul class="label-list">
+                <li class="label-list__item bg-red">акция</li>
+              </ul>
+
+              <a href="#" class="card-img"><img src="img/car10.png" alt=""></a>
+
+              <div class="card-body">
+                <a href="#" class="card-title">Audi A4</a>
+
+                <ul class="list-characteristics">
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                      </svg>
+                    </div>
+                    <p>Юрмала</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#calendar"></use>
+                      </svg>
+                    </div>
+                    <p>2011 год выпуска</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#oil"></use>
+                      </svg>
+                    </div>
+                    <p>2.0 дизель</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#transmission"></use>
+                      </svg>
+                    </div>
+                    <p>механическая</p>
+                  </li>
+                </ul>
+
+                <div class="price-wrapper">
+                  <div class="price">4 190 €</div>
+
+                  <div class="price-step">65 €/ мес</div>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <a href="#" class="btn btn-details">
+                  <span class="btn-details-text">Подробнее</span>
+                  <span class="btn-arrow"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-border-grey btn-border-green btn-all">Больше автомобилей</a>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
 
-          <a href="#" class="card-img"><img src="img/car2.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car3.png" alt=""></a>
-
-          <div class="card-body">
-            <div class="card-location"><img src="img/country-flags.png" alt=""></div>
-            <a href="#" class="card-title">Toyota RAV4</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car4.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">Audi A4</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car5.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car6.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">Toyota RAV4</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-       <div class="card-banner">
-         <img src="img/banner-card.png" alt="" class="card-banner__bg">
-         <div class="card-banner__content">
-           <h3>Низкие % ставки! Быстрое рассмотрение!</h3>
-           <a href="#" class="btn btn-accent">
-             <span class="btn-text">Подать заявку</span>
-             <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-           </a>
-         </div>
-       </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car8.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">BMW 320</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car9.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">Toyota RAV4</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 mb-30">
-        <div class="card">
-          <ul class="label-list">
-            <li class="label-list__item bg-red">акция</li>
-          </ul>
-
-          <a href="#" class="card-img"><img src="img/car10.png" alt=""></a>
-
-          <div class="card-body">
-            <a href="#" class="card-title">Audi A4</a>
-
-            <ul class="list-characteristics">
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <p>Юрмала</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#calendar"></use>
-                  </svg>
-                </div>
-                <p>2011 год выпуска</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#oil"></use>
-                  </svg>
-                </div>
-                <p>2.0 дизель</p>
-              </li>
-              <li>
-                <div class="icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#transmission"></use>
-                  </svg>
-                </div>
-                <p>механическая</p>
-              </li>
-            </ul>
-
-            <div class="price-wrapper">
-              <div class="price">4 190 €</div>
-
-              <div class="price-step">65 €/ мес</div>
-            </div>
-          </div>
-
-          <div class="card-footer">
-            <a href="#" class="btn btn-details">
-              <span class="btn-details-text">Подробнее</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <a href="#" class="btn btn-border-grey btn-all">Больше автомобилей</a>
   </div>
 </section>
 
@@ -1124,26 +1663,26 @@
       </form>
     </div>
 
-    <div class="social-content">
-      <h3>Следи за нами
-        в социальных сетях</h3>
+    <!--    <div class="social-content">-->
+    <!--      <h3>Следи за нами-->
+    <!--        в социальных сетях</h3>-->
 
-      <ul class="list-social-subscribe">
-        <li><a href="#">
-          <span class="social-icon social-icon-fb"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#fb2"></use></svg></span><span
-            class="social-text">facebook</span>
-        </a></li>
-        <li><a href="#">
-          <span class="social-icon social-icon-inst"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#instagram2"></use></svg></span><span class="social-text">instagram</span>
-        </a></li>
-        <li><a href="#">
-          <span class="social-icon social-icon-tg"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#telegram"></use></svg></span><span class="social-text">telegramm</span>
-        </a></li>
-      </ul>
-    </div>
+    <!--      <ul class="list-social-subscribe">-->
+    <!--        <li><a href="#">-->
+    <!--          <span class="social-icon social-icon-fb"><svg class="svg-icon"><use-->
+    <!--              xlink:href="img/sprite.svg#fb2"></use></svg></span><span-->
+    <!--            class="social-text">facebook</span>-->
+    <!--        </a></li>-->
+    <!--        <li><a href="#">-->
+    <!--          <span class="social-icon social-icon-inst"><svg class="svg-icon"><use-->
+    <!--              xlink:href="img/sprite.svg#instagram2"></use></svg></span><span class="social-text">instagram</span>-->
+    <!--        </a></li>-->
+    <!--        <li><a href="#">-->
+    <!--          <span class="social-icon social-icon-tg"><svg class="svg-icon"><use-->
+    <!--              xlink:href="img/sprite.svg#telegram"></use></svg></span><span class="social-text">telegramm</span>-->
+    <!--        </a></li>-->
+    <!--      </ul>-->
+    <!--    </div>-->
   </div>
 </div>
 
@@ -1162,9 +1701,9 @@
         </div>
       </div>
 
-      <a href="mailto:info@manslizings.lv" class="contacts-item">
-        <span>E-mail:</span>info@manslizings.lv
-      </a>
+      <!--      <a href="mailto:info@manslizings.lv" class="contacts-item">-->
+      <!--        <span>E-mail:</span>info@manslizings.lv-->
+      <!--      </a>-->
       <div class="contacts-item">
         <span>Режим работы:</span> 9:00 - 22:00
       </div>

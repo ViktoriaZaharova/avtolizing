@@ -2,23 +2,23 @@
 
 /*==========  Desktop First  ==========
 /* Large Devices, Wide Screens
-@media only screen and (max-width: 1800px)
-  .btn-subscribe
-    right: -250px
+//@media only screen and (max-width: 1800px)
+//  .btn-subscribe
+//    right: -250px
 
-  footer .contacts-item
-    margin: 0 50px 0 0
+  //footer .contacts-item
+  //  margin: 0 50px 0 0
 
 @media only screen and (max-width: 1680px)
   .footer-box
     margin: 0 30px 0 0
 
-  footer
-    .phone-wrapper, .contacts-item
-      margin: 0 30px 0 0
+  //footer
+  //  .phone-wrapper, .contacts-item
+  //    margin: 0 30px 0 0
 
-  .btn-subscribe
-    right: -150px
+  //.btn-subscribe
+  //  right: -150px
 
   .map
     width: 650px
@@ -30,6 +30,7 @@
   .btn-subscribe
     padding: 0 70px 0 60px
     height: 90px
+    margin: -30px 0 0
 
     .btn-icon
       width: 53px
@@ -38,7 +39,7 @@
 
 @media only screen and (max-width: 1200px)
   .contacts-item
-    font-size: 15px
+    font-size: 13px
 
   .map
     position: relative
@@ -71,23 +72,7 @@
     margin: 0 0 30px
 
   .btn-subscribe
-    position: relative
-    -webkit-clip-path: none
-    clip-path: none
-    width: calc(100% + 30px)
-    margin: 15px -15px 0
-    height: 60px
-    padding: 0
-    top: 0
-    bottom: 0
-    right: 0
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-
-    .btn-text
-      margin: 0 12px 0 0
-      font-size: 17px
+    margin: -27px 0 -2px
 
   .form
     max-width: 400px
@@ -166,24 +151,23 @@
   h1
     font-size: 30px
 
-  .menu li, header .contacts-item
+  .menu li
     margin: 0 15px 0 0
 
-  .logo
-    margin: 0
-
-  .header-row
-    width: calc(100% - 250px)
 
   header .phone
     font-size: 16px
+
+  header .contacts-item:first-child
+    margin-right: 20px
+
 
   .links-active, .menu
     font-size: 12px
 
   .btn-phone
     width: 80px
-    height: 65px
+    height: 50px
 
   .form-footer
     -ms-flex-wrap: wrap
@@ -220,6 +204,25 @@
 
 /* Medium Devices, Desktops
 @media only screen and (max-width: 1050px)
+  .btn-subscribe
+    position: relative
+    -webkit-clip-path: none
+    clip-path: none
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    height: 60px
+    padding: 0
+    top: 0
+    bottom: 0
+    right: 0
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+    .btn-text
+      margin: 0 12px 0 0
+      font-size: 17px
+
   .form-filter
     label
       max-width: 49%
@@ -236,6 +239,19 @@
   .range_val, .inp-group
     width: 100%
 
+  footer .contacts-item
+    margin: 0 0 0 auto
+
+  .list-language li
+    margin: 0 10px 0 0
+
+
+  .logo
+    max-width: 170px
+
+  .header-row
+    width: calc(100% - 170px)
+
 @media only screen and (max-width: 992px)
   .footer-bottom
     font-size: 14px
@@ -250,7 +266,7 @@
       margin: 0 0 16px
 
     .contacts-item
-      margin: 0 auto 11px
+      margin: 17px auto 26px
 
       &:last-child
         margin: 0 auto
@@ -378,11 +394,18 @@
     padding: 19px 0
     font-size: 10px
 
-  .logo
-    max-width: 210px
+  .btn-phone
+    width: 65px
+    height: 41px
 
-  .header-row
-    width: calc(100% - 210px)
+  header .phone
+    font-size: 15px
+
+  .links-active, .menu
+    font-size: 11px
+
+  header .contacts-item:first-child
+    margin-right: 10px
 
   .list-language li a
     padding: 13px 0
@@ -506,20 +529,27 @@
     a
       font-size: 14px
 
+  .title-wrapper
+    .btn
+      height: 40px
+    .button-group
+      width: 100%
+      margin: 14px 0 0
+
 /* Small Devices, Tablets
 @media only screen and (max-width: 870px)
   .header-row
     display: none
 
   .logo
-    margin: 0 auto
-    max-width: 128px
+    margin: 0 auto 0 0
+    max-width: 106px
 
   .phone-wrapper__mobile
-    display: block
+    display: flex
 
   header
-    background: #8FBA44
+    background: #fff
     border: none
     -webkit-box-shadow: none
     box-shadow: none
@@ -528,6 +558,8 @@
       -webkit-box-align: center
       -ms-flex-align: center
       align-items: center
+    .btn-search
+      margin: 0 20px
 
   .btn-search, .btn-burger
     display: -webkit-box
@@ -1009,6 +1041,8 @@
       margin: 0 auto 29px
       font-size: 25px
 
+
+
 @media only screen and (max-width: 576px)
   header
     position: fixed
@@ -1444,6 +1478,46 @@
   .main-slider__item-img
     width: 322px
     height: 190px
+
+  .tabs-catalog
+    display: flex
+    width: 40%
+    justify-content: flex-end
+
+  .btn-all-models
+    display: none
+
+  .all-models-result
+    width: 60%
+    display: flex
+
+  .title-wrapper
+    .button-group
+      .btn
+        text-align: center
+        justify-content: center
+        height: 36px
+        margin: 0 0 12px
+      .btn-brown
+        width: calc(60% - 5px)
+      .btn-red
+        width: calc(40% - 5px)
+        order: -1
+
+  .tab_content-col
+    .col-3
+      width: 50%
+    .col-3-100
+      width: 100%
+
+  .container
+    padding: 0 10px
+
+  .row
+    margin: 0 -10px
+
+  .col-3, .col-9, .col-12
+    padding: 0 10px
 
 @media (max-width: 420px)
   .form-cookie .checkbox

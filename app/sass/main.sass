@@ -1,53 +1,5 @@
-@charset "UTF-8"
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 300
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-Light.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Light.ttf") format("truetype")
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 400
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-Regular.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Regular.ttf") format("truetype")
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 500
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-Medium.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Medium.ttf") format("truetype")
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 600
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-SemiBold.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-SemiBold.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-SemiBold.ttf") format("truetype")
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 700
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-Bold.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Bold.ttf") format("truetype")
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 800
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-Heavy.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Heavy.ttf") format("truetype")
-
-@font-face
-  font-family: "sfprodisplay"
-  font-weight: 900
-  font-style: normal
-  src: url("../fonts/SFProDisplay/SFProDisplay-Black.eot")
-  src: url("../fonts/SFProDisplay/SFProDisplay-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/SFProDisplay/SFProDisplay-Black.woff") format("woff"), url("../fonts/SFProDisplay/SFProDisplay-Black.ttf") format("truetype")
+@import "vars"
+@import "fonts"
 
 *
   -webkit-box-sizing: border-box
@@ -191,7 +143,6 @@ button
   -ms-flex-align: center
   align-items: center
   height: 66px
-  width: -webkit-fit-content
   width: -moz-fit-content
   width: fit-content
   position: relative
@@ -250,11 +201,19 @@ button
     background: #DDE0DC
     color: #8FBA44
 
+.btn-border-green
+  border: 1px solid $accent
+  color: $accent
+  &:hover
+    background: $accent
+    color: #fff
+
+
 .btn-accent
   -webkit-box-pack: center
   -ms-flex-pack: center
   justify-content: center
-  background: #2AB051
+  background: $accent
   color: #fff
   letter-spacing: 0.02em
   font-size: 17px
@@ -289,12 +248,43 @@ button
     -webkit-clip-path: none
     clip-path: none
 
+.btn-green
+  background: #8FBA44
+  color: #fff
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 16px
+  .btn-arrow
+    fill: #fff
+    margin-left: 47px
+    width: 20px
+    height: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+  &:hover
+    background: $green
+    color: #fff
+    .btn-arrow
+      fill: #fff
+
 .btn-red
   background: #BA4444
   color: #fff
-  font-size: 18px
+  font-size: 16px
   font-weight: 500
-  height: 49px
+  height: 40px
+  padding: 0 25px
+
+  &:hover
+    background: #8FBA44
+
+.btn-brown
+  background: #BAAA44
+  color: #fff
+  font-size: 16px
+  font-weight: 500
+  height: 40px
   padding: 0 25px
 
   &:hover
@@ -304,8 +294,8 @@ button
   border: 1px solid #DDE0DC
   background: #F5F5F5
   color: #2A2D28
-  font-size: 18px
-  height: 49px
+  font-size: 16px
+  height: 40px
   padding: 0 40px
 
   &:hover
@@ -355,10 +345,7 @@ button
 .contacts-item
   color: #656871
   font-weight: 600
-  margin: 0 95px 0 0
 
-  &:last-child
-    margin: 0
 
   span
     color: #B0B0B0
@@ -620,7 +607,7 @@ h2
   width: 24px
   height: 24px
   min-width: 24px
-  background: #2AB051
+  background: $accent
   cursor: pointer
 
   &:before
@@ -706,7 +693,6 @@ h2
     margin: 0 auto 0 0
     font-size: 30px
     font-weight: 600
-    width: -webkit-fit-content
     width: -moz-fit-content
     width: fit-content
 
@@ -729,6 +715,47 @@ h2
 .title-mobile
   display: none
 
+.all-models-result
+  display: none
+  color: #656871
+  font-size: 14px
+
+.tabs
+  display: flex
+  align-items: center
+
+  li
+    margin-left: 5px
+    &:first-child
+      margin: 0
+    a
+      background: #FAFAFA
+      width: 30px
+      height: 30px
+      border: 1px solid #DDE0DC
+      display: flex
+      align-items: center
+      justify-content: center
+      fill: #B0B0B0
+      padding: 7px
+    &.active
+      a
+        fill: #404A59
+        border-color: #404A59
+        background: #FAFAFA
+
+.tabs-catalog
+  display: none
+
+
+.tab_content
+  width: 100%
+  display: none
+  &.active
+    display: block
+
+
+
 .btn-search, .btn-burger
   display: none
   -webkit-box-align: center
@@ -742,12 +769,17 @@ h2
 .btn-search
   width: 20px
   height: 20px
-  fill: #fff
+  fill: #8FBA44
+  &.open
+    &:before, &:after
+      display: none
+    .svg-icon
+      display: block
 
 .btn-burger
-  width: 25px
+  width: 20px
   height: 18px
-  fill: #fff
+  fill: #8FBA44
 
 .clicked .svg-icon, .open .svg-icon
   display: none
@@ -758,7 +790,7 @@ h2
     position: absolute
     width: 25px
     height: 2px
-    background: #fff
+    background: $accent
     top: 10px
     left: -1px
     -webkit-transition: .3s ease
@@ -833,7 +865,6 @@ h2
     display: flex
 
     a
-      width: -webkit-fit-content
       width: -moz-fit-content
       width: fit-content
 
@@ -876,7 +907,7 @@ h2
 
   .contacts-item
     margin: 0 auto 9px
-    font-size: 15px
+    font-size: 13px
     -webkit-box-pack: center
     -ms-flex-pack: center
     justify-content: center
@@ -1009,20 +1040,19 @@ header
   box-shadow: inset 0px -1px 0px #DDE0DC
 
   .contacts-item
-    margin: 0 53px 0 0
-
+    &:first-child
+      margin: 0 42px 0 0
   .phone-wrapper
     margin: 0
-
-    &:before
-      content: ''
-      display: inline-block
-      margin: 0 13px 0 0
-      width: 17px
-      height: 32px
-      background: #8FBA44
-      -webkit-clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
-      clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
+    //&:before
+    //  content: ''
+    //  display: inline-block
+    //  margin: 0 13px 0 0
+    //  width: 17px
+    //  height: 32px
+    //  background: #8FBA44
+    //  -webkit-clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
+    //  clip-path: polygon(70% 0%, 100% 0%, 30% 100%, 0% 100%)
 
   .phone
     color: #2A2D28
@@ -1041,9 +1071,8 @@ header
   -webkit-box-pack: center
   -ms-flex-pack: center
   justify-content: center
-  max-width: 250px
+  max-width: 200px
   width: 100%
-  margin: 0 0 0 -60px
 
 .header-row
   display: -webkit-box
@@ -1054,8 +1083,8 @@ header
   -webkit-box-pack: end
   -ms-flex-pack: end
   justify-content: flex-end
-  width: calc(100% - 190px)
-  padding: 0 0 0 8px
+  width: calc(100% - 200px)
+  padding: 0 0 0 11px
 
 .header-top, .header-bottom
   width: 100%
@@ -1084,10 +1113,10 @@ header
   font-size: 13px
   font-weight: 500
   text-transform: uppercase
-  margin: 0 0 0 auto
+  margin: 0 auto
 
   li
-    margin: 0 30px 0 0
+    margin: 0 20px 0 0
 
     &:last-child
       margin: 0
@@ -1114,13 +1143,13 @@ header
         color: #656871
 
         &:before
-          width: 80px
+          width: 100%
 
     .active
       color: #656871
 
       &:before
-        width: 80px
+        width: 100%
 
 .menu
   display: -webkit-box
@@ -1130,13 +1159,14 @@ header
   -ms-flex-align: center
   align-items: center
   -ms-flex-wrap: wrap
+  justify-content: space-between
   flex-wrap: wrap
   color: #2A2D28
   font-size: 14px
   font-weight: bold
   text-transform: uppercase
   margin: 0 auto 0 0
-
+  width: 100%
   li
     margin: 0 35px 0 0
 
@@ -1145,7 +1175,7 @@ header
 
     a
       color: #2A2D28
-      padding: 24px 0 27px
+      padding: 22px 0 22px
       position: relative
 
       &:before
@@ -1165,26 +1195,30 @@ header
         color: #8FBA44
 
         &:before
-          width: 100px
+          width: 100%
 
 .phone-wrapper__mobile
   display: none
-  background: #f4f5f4
-  padding: 10px 0
+  //background: #f4f5f4
+  //padding: 10px 0
   text-align: center
-
-  .phone
-    font-size: 24px
-    vertical-align: middle
-    display: inline-block
-
-  .svg-icon
-    width: 24px
-    height: 24px
-    fill: #2AB051
-    margin-right: 5px
-    display: inline-block
-    vertical-align: middle
+  width: 18px
+  height: 18px
+  fill: $accent
+  align-items: center
+  justify-content: center
+  //.phone
+  //  font-size: 24px
+  //  vertical-align: middle
+  //  display: inline-block
+  //
+  //.svg-icon
+  //  width: 24px
+  //  height: 24px
+  //  fill: #2AB051
+  //  margin-right: 5px
+  //  display: inline-block
+  //  vertical-align: middle
 
 .home
   position: relative
@@ -1281,13 +1315,13 @@ header
 
 .overlay-text
   position: absolute
-  top: 18px
-  left: -218px
+  top: 8px
+  left: 15px
   color: #F1F3F2
   text-transform: uppercase
-  font-size: 230px
+  font-size: 170px
   font-weight: 900
-  line-height: 274px
+  line-height: 203px
 
 .decor-img
   position: absolute
@@ -1531,7 +1565,7 @@ header
     height: 50px
     left: -340px
     top: 50px
-    background: #2AB051
+    background: $accent
 
   img
     width: 100%
@@ -1565,7 +1599,7 @@ header
     clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%)
     top: 0
     right: 0
-    background: rgba(42, 176, 81, 0.8)
+    background: rgba($accent, 0.8)
 
   > *
     position: relative
@@ -1804,6 +1838,11 @@ header
   -webkit-box-direction: normal
   -ms-flex-direction: column
   flex-direction: column
+  transition: .3s ease
+  &:hover
+    border: 1px solid #8FBA44
+    .card-footer
+      border-top-color: $accent
 
 .card-img
   position: relative
@@ -2012,14 +2051,14 @@ header
 .filter-wrapper
   width: 100%
   margin: 0 0 40px
-  padding: 27px 35px
-  background: #ffffff
-  border: 1px solid #DDE0DC
+  padding: 30px 35px 30px 31px
+  background: #2D343E
 
   h2
     width: 100%
-    margin: 0 0 18px
+    margin: 0 0 15px
     font-size: 30px
+    color: #fff
 
 .form-filter
   display: -webkit-box
@@ -2038,7 +2077,7 @@ header
     max-width: 360px
     width: 100%
     height: 66px
-
+    background: $accent
     &:after
       width: 130px
 
@@ -2142,7 +2181,7 @@ header
   border-radius: 0
 
 .ui-slider .ui-slider-range
-  background: #2AB051
+  background: #8FBA44
   height: 4px
 
 .ui-slider-horizontal
@@ -2153,7 +2192,7 @@ header
   height: 16px
   border-radius: 50%
   background: #FFFFFF
-  border: 3px solid #2AB051
+  border: 3px solid #8FBA44
   outline: none
   cursor: pointer
   top: -6px
@@ -2164,7 +2203,7 @@ html .ui-button.ui-state-disabled
     height: 16px
     border-radius: 50%
     background: #FFFFFF
-    border: 3px solid #2AB051
+    border: 3px solid #8FBA44
     outline: none
     cursor: pointer
     top: -6px
@@ -2253,10 +2292,16 @@ html .ui-button.ui-state-disabled
       &:hover
         color: #8FBA44
 
+footer
+  .contacts-item
+    margin: 0 auto
+
 .footer-top
   border-bottom: 1px solid #DDE0DC
   position: relative
 
+  .phone-wrapper
+    margin: 0
   .container
     -webkit-box-align: center
     -ms-flex-align: center
@@ -2277,9 +2322,11 @@ html .ui-button.ui-state-disabled
 .btn-subscribe
   -webkit-box-shadow: inset 1.09091px -4.36364px 0px #8FBA44
   box-shadow: inset 1.09091px -4.36364px 0px #8FBA44
-  position: absolute
-  bottom: 0
-  right: -370px
+  //position: absolute
+  //bottom: 0
+  //right: 15px
+  //right: -370px
+  margin: -62px 0 -2px 0
   -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%)
   clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%)
   background: #8FBA44
@@ -2340,7 +2387,6 @@ html .ui-button.ui-state-disabled
     font-weight: 600
     padding: 0 23px
     height: 47px
-    width: -webkit-fit-content
     width: -moz-fit-content
     width: fit-content
     margin: 0 15px 0 0
@@ -2737,7 +2783,6 @@ html .ui-button.ui-state-disabled
 
 .links-all
   color: #2AB051
-  width: -webkit-fit-content
   width: -moz-fit-content
   width: fit-content
   margin: 10px 0 0 29px
@@ -3121,7 +3166,6 @@ html .ui-button.ui-state-disabled
 
 .welcome-popup__close
   margin: 20px auto 0
-  width: -webkit-fit-content
   width: -moz-fit-content
   width: fit-content
   color: #B0B0B0
@@ -3229,7 +3273,6 @@ html .ui-button.ui-state-disabled
   .btn
     height: 30px
     font-size: 12px
-    width: -webkit-fit-content
     width: -moz-fit-content
     width: fit-content
     padding: 4px 10px
@@ -3266,7 +3309,6 @@ html .ui-button.ui-state-disabled
     flex-wrap: wrap
 
   .checkbox
-    width: -webkit-fit-content
     width: -moz-fit-content
     width: fit-content
     color: #656871
@@ -4063,7 +4105,6 @@ html .ui-button.ui-state-disabled
     .input-text
       padding: 3px
       background: #FAFAFA
-      width: -webkit-fit-content
       width: -moz-fit-content
       width: fit-content
 
@@ -4721,7 +4762,6 @@ html .ui-button.ui-state-disabled
 
   li
     margin: 0 19px 0 0
-
     &:last-child
       margin: 0
 
@@ -4732,5 +4772,6 @@ html .ui-button.ui-state-disabled
 
       &:hover
         color: #8FBA44
+
 
 @import "media"

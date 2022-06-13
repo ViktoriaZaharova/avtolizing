@@ -284,12 +284,13 @@ $('.characteristics-item h5').on('click', function () {
 
 // tabs
 $(document).ready(function ($) {
-    $('.tabs-wrap li a').click(function (e) {
+    $('.tabs li a').click(function (e) {
         e.preventDefault();
     });
-    $('.tabs-wrap li').click(function () {
-        $('.tabs-wrap li').removeClass('active');
-        $(this).addClass('active').closest('.tabs-wrap').find('.tab_content').removeClass('active');
+    $('.tabs li').click(function () {
+        $('.tabs li').removeClass('active');
+        $(this).addClass('active');
+        $('.tab_content').removeClass('active')
 
         var selectTab = $(this).find('a').attr("href");
 
