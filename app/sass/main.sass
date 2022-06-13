@@ -123,6 +123,10 @@ button
   &:hover, &:focus
     outline: none
 
+strong
+  display: inline
+  font-weight: 600
+
 .container
   margin: 0 auto
   width: 100%
@@ -386,12 +390,19 @@ button
   width: 66.6%
   padding: 0 15px
 
+.col-6
+  width: 50%
+  padding: 0 15px
+
 .col-12
   width: 100%
   padding: 0 15px
 
 .mb-30
   margin-bottom: 30px
+
+.align-items-center
+  align-items: center
 
 .links-active
   border-bottom: 2px dotted #8FBA44
@@ -1398,7 +1409,7 @@ header
 .social-content
   width: 100%
   color: #fff
-  background: #2AB051
+  background: $accent
   mix-blend-mode: normal
   position: relative
   overflow: hidden
@@ -1843,6 +1854,23 @@ header
     border: 1px solid #8FBA44
     .card-footer
       border-top-color: $accent
+
+.mileage
+  width: fit-content
+  display: none
+  align-items: center
+  color: #fff
+  background: #D3BC2B
+  height: 22px
+  padding: 0 8px
+  font-size: 14px
+
+.mileage-icon
+  margin: 0 3px 0 0
+  max-width: 13px
+  display: flex
+  align-items: center
+  justify-content: center
 
 .card-img
   position: relative
@@ -2778,8 +2806,8 @@ footer
     border: 1px solid #DDE0DC
 
   .checkbox-inp:checked + .checkbox-custom
-    background: #2AB051
-    border-color: #2AB051
+    background: $accent
+    border-color: $accent
 
 .links-all
   color: #2AB051
@@ -4043,7 +4071,8 @@ footer
   h1
     margin: 0 auto 10px
     text-align: center
-    color: #2AB051
+    color: $accent
+    font-weight: 500
 
   .box-text
     text-align: center
@@ -4121,7 +4150,7 @@ footer
     letter-spacing: 0.02em
 
 .checkout-head
-  background: #2AB051
+  background: #2D343E
   width: 100%
   padding: 27px 60px
 
@@ -4183,7 +4212,7 @@ footer
     margin: 0
 
 .step-ready
-  background: #2AB051
+  background: $accent
 
 .checkout-footer
   width: 100%
@@ -4249,7 +4278,7 @@ footer
     display: block
 
   .input-text
-    color: #2AB051
+    color: $accent
     background: #FAFAFA
     padding: 3px
 
@@ -4257,7 +4286,7 @@ footer
       display: none
 
   input, select
-    border-color: #2AB051
+    border-color: $accent
 
   .label-wrapper
     padding: 0 17px
@@ -4314,13 +4343,13 @@ footer
 .form-description
   font-size: 16px
   font-weight: 300
-  margin: 0 0 16px
+  margin: 0 0 20px
 
 .label-file
   width: 100%
   cursor: pointer
   border: 1px dashed #DDE0DC
-  height: 55px
+  height: 100px
   display: -webkit-box
   display: -ms-flexbox
   display: flex

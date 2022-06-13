@@ -770,11 +770,11 @@
 
   .social-icon-inst
     width: 30px
-    height: 30px
+    height: 36px
 
   .social-icon-tg
     width: 34px
-    height: 30px
+    height: 36px
 
   .social-icon-fb
     width: 19px
@@ -1509,6 +1509,49 @@
       width: 50%
     .col-3-100
       width: 100%
+    .card
+      .card-location
+        max-width: 24px
+        right: 7px
+        top: -12px
+      .list-characteristics
+        font-size: 10px
+        li
+          padding: 0 5px
+          margin-right: 3px
+          height: 16px
+      .engine-type
+        max-width: 16px
+      .year-text
+        max-width: 23px
+      .mileage
+        font-size: 10px
+        height: 16px
+      .mileage-icon
+        width: 9px
+        height: 7px
+      .price
+        font-size: 14px
+      .price-step
+        font-size: 12px
+      .card-title
+        font-size: 12px
+        margin: 0 0 3px
+        &:before
+          margin: 0 4px 0 0
+          width: 7px
+          height: 12px
+      .price-wrapper
+        margin: 10px 0 0
+      .btn-details
+        font-size: 12px
+        height: 30px
+        padding: 0 17px 0 20px
+        .btn-arrow
+          width: 15px
+          height: 10px
+      .card-body
+        padding: 10px 6px 4px
 
   .container
     padding: 0 10px
@@ -1516,10 +1559,65 @@
   .row
     margin: 0 -10px
 
-  .col-3, .col-9, .col-12
+  .col-3, .col-9, .col-12, .col-6
     padding: 0 10px
+
+  .col-6
+    width: 100%
+
+  .form .label-file
+    margin: 0
+
+  .checkout-form
+    margin: 24px 0
+
+  .card
+    .list-characteristics
+      justify-content: flex-start
+      font-size: 14px
+      .icon
+        display: none
+      li
+        height: 22px
+        width: fit-content
+        background: #F2F2F2
+        padding: 0 8px
+        margin: 0 4px 3px 0
+        &:last-child
+          margin: 0 0 3px
+
+  .engine-type
+    max-width: 23px
+    overflow: hidden
+    white-space: nowrap
+
+  .year-text
+    white-space: nowrap
+    overflow: hidden
+    max-width: 32px
+
+  .mileage
+    display: flex
+
+  .type-transmission
+    display: none
+
+  .social-content:before
+    width: 268px
+    height: 164px
+    top: -13px
+    left: -89px
 
 @media (max-width: 420px)
   .form-cookie .checkbox
     width: 100%
     margin-right: 0
+
+  .tab_content-col
+    .card
+      .card-img
+        height: 90px
+      .label-list
+        font-size: 10px
+        top: 5px
+        right: 0

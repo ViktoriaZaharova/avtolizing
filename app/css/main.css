@@ -160,6 +160,10 @@ button {
   button:hover, button:focus {
     outline: none; }
 
+strong {
+  display: inline;
+  font-weight: 600; }
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -414,12 +418,21 @@ button {
   width: 66.6%;
   padding: 0 15px; }
 
+.col-6 {
+  width: 50%;
+  padding: 0 15px; }
+
 .col-12 {
   width: 100%;
   padding: 0 15px; }
 
 .mb-30 {
   margin-bottom: 30px; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .links-active {
   border-bottom: 2px dotted #8FBA44;
@@ -1326,7 +1339,7 @@ header {
 .social-content {
   width: 100%;
   color: #fff;
-  background: #2AB051;
+  background: #8FBA44;
   mix-blend-mode: normal;
   position: relative;
   overflow: hidden;
@@ -1740,6 +1753,33 @@ header {
     border: 1px solid #8FBA44; }
     .card:hover .card-footer {
       border-top-color: #8FBA44; }
+
+.mileage {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background: #D3BC2B;
+  height: 22px;
+  padding: 0 8px;
+  font-size: 14px; }
+
+.mileage-icon {
+  margin: 0 3px 0 0;
+  max-width: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .card-img {
   position: relative;
@@ -2597,8 +2637,8 @@ footer .contacts-item {
     background: #F5F5F5;
     border: 1px solid #DDE0DC; }
   .list-checkbox .checkbox-inp:checked + .checkbox-custom {
-    background: #2AB051;
-    border-color: #2AB051; }
+    background: #8FBA44;
+    border-color: #8FBA44; }
 
 .links-all {
   color: #2AB051;
@@ -3761,7 +3801,8 @@ footer .contacts-item {
   .page-checkout h1 {
     margin: 0 auto 10px;
     text-align: center;
-    color: #2AB051; }
+    color: #8FBA44;
+    font-weight: 500; }
   .page-checkout .box-text {
     text-align: center;
     font-size: 21px;
@@ -3827,7 +3868,7 @@ footer .contacts-item {
     letter-spacing: 0.02em; }
 
 .checkout-head {
-  background: #2AB051;
+  background: #2D343E;
   width: 100%;
   padding: 27px 60px; }
   .checkout-head .btn {
@@ -3885,7 +3926,7 @@ footer .contacts-item {
     margin: 0; }
 
 .step-ready {
-  background: #2AB051; }
+  background: #8FBA44; }
 
 .checkout-footer {
   width: 100%;
@@ -3944,13 +3985,13 @@ footer .contacts-item {
   .input-luck .select-checkout {
     display: block; }
   .input-luck .input-text {
-    color: #2AB051;
+    color: #8FBA44;
     background: #FAFAFA;
     padding: 3px; }
     .input-luck .input-text:before {
       display: none; }
   .input-luck input, .input-luck select {
-    border-color: #2AB051; }
+    border-color: #8FBA44; }
   .input-luck .label-wrapper {
     padding: 0 17px;
     top: -10px;
@@ -4004,13 +4045,13 @@ footer .contacts-item {
 .form-description {
   font-size: 16px;
   font-weight: 300;
-  margin: 0 0 16px; }
+  margin: 0 0 20px; }
 
 .label-file {
   width: 100%;
   cursor: pointer;
   border: 1px dashed #DDE0DC;
-  height: 55px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5001,10 +5042,10 @@ footer .contacts-item {
     width: 77px; }
   .social-icon-inst {
     width: 30px;
-    height: 30px; }
+    height: 36px; }
   .social-icon-tg {
     width: 34px;
-    height: 30px; }
+    height: 36px; }
   .social-icon-fb {
     width: 19px;
     height: 36px; }
@@ -5553,14 +5594,104 @@ footer .contacts-item {
     width: 50%; }
   .tab_content-col .col-3-100 {
     width: 100%; }
+  .tab_content-col .card .card-location {
+    max-width: 24px;
+    right: 7px;
+    top: -12px; }
+  .tab_content-col .card .list-characteristics {
+    font-size: 10px; }
+    .tab_content-col .card .list-characteristics li {
+      padding: 0 5px;
+      margin-right: 3px;
+      height: 16px; }
+  .tab_content-col .card .engine-type {
+    max-width: 16px; }
+  .tab_content-col .card .year-text {
+    max-width: 23px; }
+  .tab_content-col .card .mileage {
+    font-size: 10px;
+    height: 16px; }
+  .tab_content-col .card .mileage-icon {
+    width: 9px;
+    height: 7px; }
+  .tab_content-col .card .price {
+    font-size: 14px; }
+  .tab_content-col .card .price-step {
+    font-size: 12px; }
+  .tab_content-col .card .card-title {
+    font-size: 12px;
+    margin: 0 0 3px; }
+    .tab_content-col .card .card-title:before {
+      margin: 0 4px 0 0;
+      width: 7px;
+      height: 12px; }
+  .tab_content-col .card .price-wrapper {
+    margin: 10px 0 0; }
+  .tab_content-col .card .btn-details {
+    font-size: 12px;
+    height: 30px;
+    padding: 0 17px 0 20px; }
+    .tab_content-col .card .btn-details .btn-arrow {
+      width: 15px;
+      height: 10px; }
+  .tab_content-col .card .card-body {
+    padding: 10px 6px 4px; }
   .container {
     padding: 0 10px; }
   .row {
     margin: 0 -10px; }
-  .col-3, .col-9, .col-12 {
-    padding: 0 10px; } }
+  .col-3, .col-9, .col-12, .col-6 {
+    padding: 0 10px; }
+  .col-6 {
+    width: 100%; }
+  .form .label-file {
+    margin: 0; }
+  .checkout-form {
+    margin: 24px 0; }
+  .card .list-characteristics {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-size: 14px; }
+    .card .list-characteristics .icon {
+      display: none; }
+    .card .list-characteristics li {
+      height: 22px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      background: #F2F2F2;
+      padding: 0 8px;
+      margin: 0 4px 3px 0; }
+      .card .list-characteristics li:last-child {
+        margin: 0 0 3px; }
+  .engine-type {
+    max-width: 23px;
+    overflow: hidden;
+    white-space: nowrap; }
+  .year-text {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 32px; }
+  .mileage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .type-transmission {
+    display: none; }
+  .social-content:before {
+    width: 268px;
+    height: 164px;
+    top: -13px;
+    left: -89px; } }
 
 @media (max-width: 420px) {
   .form-cookie .checkbox {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .tab_content-col .card .card-img {
+    height: 90px; }
+  .tab_content-col .card .label-list {
+    font-size: 10px;
+    top: 5px;
+    right: 0; } }
