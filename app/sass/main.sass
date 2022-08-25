@@ -2649,23 +2649,33 @@ footer
   color: #656871
 
   li
+    margin: 0 10px 3px 0
+    &:last-child
+      margin: 0 0 3px
     a
-      color: #B0B0B0
+      color: #656871
       display: -webkit-box
       display: -ms-flexbox
       display: flex
       -webkit-box-align: center
       -ms-flex-align: center
       align-items: center
-
+      border: 1px solid #B0B0B0
+        radius: 20px
+      height: 30px
+      padding: 0 14px
       &:after
-        content: '—'
-        display: inline-block
-        margin: 0 5px
+        display: none
 
     span
-      display: inline-block
-      color: #656871
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #B0B0B0
+      border: 1px solid #B0B0B0
+        radius: 20px
+      height: 30px
+      padding: 0 14px
 
 .clear-filter
   width: 100%
