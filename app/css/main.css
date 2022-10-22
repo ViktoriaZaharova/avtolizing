@@ -4494,6 +4494,40 @@ footer .contacts-item {
       .list-tags li a:hover {
         color: #8FBA44; }
 
+.list-maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-maps li {
+    margin: 0 0 0 10px; }
+    .list-maps li:last-child {
+      display: none; }
+    .list-maps li a {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      padding: 7px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
+.link-google {
+  background: #EFF2F9; }
+
+.link-waze {
+  background: #33CCFF; }
+
 /*==========  Desktop First  ========== */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1680px) {
@@ -5700,7 +5734,11 @@ footer .contacts-item {
     width: 268px;
     height: 164px;
     top: -13px;
-    left: -89px; } }
+    left: -89px; }
+  .page-product-seller .seller-item {
+    display: none; }
+  .list-maps li:last-child {
+    display: block; } }
 
 @media (max-width: 420px) {
   .form-cookie .checkbox {
