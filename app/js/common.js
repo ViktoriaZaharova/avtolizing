@@ -1,3 +1,46 @@
+$(document).ready(function () {
+    var input = document.querySelector(".phone-input1");
+    window.intlTelInput(input, {
+        separateDialCode: false,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
+    var input2 = document.querySelector(".phone-input2");
+    window.intlTelInput(input2, {
+        separateDialCode: false,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
+    var input3 = document.querySelector(".phone-input3");
+    window.intlTelInput(input3, {
+        separateDialCode: false,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
+    var input4 = document.querySelector(".phone-input4");
+    window.intlTelInput(input4, {
+        separateDialCode: false,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
+});
+
 // input focus
 $("input,textarea").focus(function () {
     $(this).parent().addClass("focus");
@@ -240,6 +283,20 @@ $('.main-slider').slick({
         '<path d="M4.5639 0H0L11.4361 27H16L4.5639 0Z"/>\n' +
         '<path d="M11.4361 27H16L4.5639 54H0L11.4361 27Z"/>\n' +
         '</svg>\n</button>',
+});
+
+$('.reviews-slider').slick({
+    slidesToShow: 2,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-v2"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-v2"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 var $pagingInfo = $('.counter-slide');

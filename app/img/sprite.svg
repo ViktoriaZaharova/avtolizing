@@ -207,4 +207,12 @@
         <path d="M6.00959 10.9448H18.0541V13.8699H6.00959V10.9448Z"/>
     </symbol>
 
+    <symbol id="prev" viewBox="0 0 22 38">
+        <path d="M20 2L3 19L20 36" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="next" viewBox="0 0 22 38">
+        <path d="M2 36L19 19L2 2" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+
 </svg>
