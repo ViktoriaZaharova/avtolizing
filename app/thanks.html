@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
   <link rel="stylesheet" href="css/intlTelInput.css"/>
+  <link rel="stylesheet" href="css/fileup.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -358,27 +359,87 @@
 <section class="page page-thanks">
   <div class="container">
 
-    <div class="page-thanks__item">
-      <div class="thanks-icon">
-        <svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#checkbox"></use>
-        </svg>
+    <div class="page-success__content">
+      <div class="overlay-text">Autovia</div>
+      <h1>Спасибо! <strong>Ваша заявка получена</strong></h1>
+
+      <form method="post" class="form form-success">
+
+        <div class="form-success-box">
+          <div class="form-success-box__row">
+            <h3>В какую цену вы оцениваете свой авто?</h3>
+            <label class="label-price">
+              <input type="text" name="price" placeholder="Желаемая цена">
+              <span class="label-price__icon"><span>€</span></span>
+            </label>
+          </div>
+
+
+          <h3>Как вы хотите чтобы мы связались с вами?</h3>
+          <div class="form-group">
+            <label class="radio">
+              <input type="radio" class="inp-radio" name="radio" checked>
+              <span class="radio-custom"></span>
+              <span class="radio-text">
+                    <span class="radio-text__title">Позвоните мне</span>
+                <!--                    <span class="radio-text__content">-->
+                <!--                      <span>+371 29-838-705</span>-->
+                <!--                      &lt;!&ndash;                       <a href="#" class="color-accent links-edit">Изменить</a>&ndash;&gt;-->
+                <!--                    </span>-->
+                  </span>
+            </label>
+            <label class="radio">
+              <input type="radio" class="inp-radio" name="radio">
+              <span class="radio-custom"></span>
+
+              <span class="radio-text">
+                    <span class="radio-text__title">Отправьте СМС</span>
+                <!--                    <span class="radio-text__content">-->
+                <!--                      <span>+371 29-838-705</span>-->
+                <!--                      &lt;!&ndash;                      <a href="#" class="color-accent links-edit">Изменить</a>&ndash;&gt;-->
+                <!--                    </span>-->
+                  </span>
+            </label>
+            <label class="radio radio-mail">
+              <input type="radio" class="inp-radio" name="radio">
+              <span class="radio-custom"></span>
+              <span class="radio-text">
+              <span class="radio-text__title">По эл. почте</span>
+              <span class="radio-text__content">
+                <input type="text" name="mail" placeholder="Введите E-mail">
+              </span>
+            </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-success-box form-success-file">
+          <div class="box-text">
+            <p>Чтобы более точно определить стоимость автомобиля, добавьте фото (салон и кузов)</p>
+          </div>
+          <label class="label-file">
+            <input type="file" class="inp-file" id="upload-demo" multiple>
+            <span class="label-file__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#image"></use></svg></span>
+            <span class="label-file__text">Прикрепить фото</span>
+          </label>
+
+          <div class="label-file-result queue" id="upload-demo-queue"></div>
+        </div>
+
+        <button type="button" class="btn btn-accent" data-toggle="modal" data-target="#thanks-successModal">
+          <span class="btn-text">сохранить выбор</span>
+        </button>
+      </form>
+
+      <div class="form-success__consultation">
+        <p>Если у вас возникли какие то вопросы, можете связаться с нами по номеру <a href="tel:+371 29-838-705"
+                                                                                      class="d-inline font-700 color-black">+371
+          29-838-705.</a></p>
       </div>
-      <h1>Спасибо! Ваша заявка получена.
-      </h1>
-      <div class="box-text">
-        <p>В ближайшее время с Вами свяжется менеджер, чтобы уточнить все необходимые детали.</p>
-        <p>Если у Вас возникнут
-          вопросы,
-          звоните на <a href="tel:26-612-612" class="phone-item">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#phone2"></use>
-            </svg>
-            26-612-612</a></p>
-      </div>
-      <a href="#" class="btn btn-accent"><span class="btn-text">на главную</span><span class="btn-arrow"><svg
-          class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
+
     </div>
+
   </div>
 </section>
 
@@ -540,6 +601,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/intlTelInput.js"></script>
+<script src="js/fileup.js"></script>
 <script src="js/common.js"></script>
 
 </body>

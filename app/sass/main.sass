@@ -4052,44 +4052,328 @@ footer
   padding: 0 0 20px
 
 .page-thanks
-  padding: 100px 0 170px
-
-.page-thanks__item
-  width: 100%
-  text-align: center
-
+  background: #F8F8F8
+  padding: 110px 0 113px
   h1
     text-align: center
-    color: #2AB051
+    max-width: 900px
+    text-transform: uppercase
+    margin: 0 auto 30px
+    font-size: 60px
+    font-weight: 400
+    strong
+      font-weight: 800
+      display: inline
 
-  .thanks-icon
-    background: #FAFAFA
-    width: 140px
-    height: 140px
-    display: -webkit-box
-    display: -ms-flexbox
+.page-success__content
+  width: 100%
+  margin: 0 auto
+  max-width: 790px
+  position: relative
+  z-index: 1
+  .overlay-text
+    top: -110px
+    color: #F1F3F2
+
+.form-success
+  width: 100%
+  max-width: 770px
+  margin: 0 auto
+  button
+    margin: 20px auto 0
+    max-width: 321px
+  .label-price
+    position: relative
+    max-width: 250px
+    margin: 0
+    &__icon
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      height: 24px
+      width: 24px
+      top: 50%
+      left: 8px
+      transform: translate(0,-50%)
+      border: 1.09091px solid #8FBA44
+        radius: 50%
+      font-size: 12px
+      font-weight: 500
+      line-height: 14px
+      font-feature-settings: 'pnum' on, 'lnum' on
+      color: #8FBA44
+
+    input
+      height: 40px
+      padding: 0 0 0 42px
+      border: 1px solid #A6A6A6
+
+.form-success-box
+  width: 100%
+  margin: 0 auto 20px
+  background: #fff
+  box-shadow: 0 4px 34px rgba(0, 0, 0, 0.1)
+  border: 1px solid #DDE0DC
+  padding: 50px
+  &:last-child
+    margin: 0 auto
+  h3
+    font-weight: bold
+    margin: 0 0 15px
+  &__row
+    width: 100%
     display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
     align-items: center
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-    border-radius: 50%
-    margin: 0 auto 40px
-    padding: 48px
+    flex-wrap: wrap
+    margin: 0 0 40px
+    h3
+      margin: 0 23px 0 0
 
-    .svg-icon
-      fill: #2AB051
+  .form-group
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    .radio
+      margin: 0 10px 10px 0
+      max-width: 150px
+      &:last-child
+        margin: 0 0 10px
+    .radio-mail
+      width: fit-content
+      max-width: none
 
+
+
+.form-success-file
+  width: 100%
   .box-text
-    font-size: 21px
-    font-weight: 500
-    line-height: 140%
+    margin: 0 auto 16px
+    text-align: center
+    max-width: 530px
+    width: 100%
+    font-weight: bold
+    color: #2C333D
+  .inp-file
+    display: none
+  .label-file
+    max-width: 100%
+    //max-width: 300px
+    margin: 0 auto
+    width: 100%
+    color: $accent
+    font-size: 16px
+    border: 2px dashed $accent
+    height: 100px
+  .svg-icon
+    fill: $accent
+    width: 30px
+    height: 30px
+    margin: 0 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
 
-  .btn
-    margin: 80px auto 0
-    max-width: 264px
+.label-file-result
+  width: 100%
+  margin: 16px 0 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+
+.fileup-file
+  margin: 0 4px 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: transparent
+  position: relative
+  padding: 0
+  border: none
+    radius: 0
+  max-width: none
+
+.fileup-file.fileup-image .fileup-preview
+  width: 80px
+  height: 57px
+  border: 1px solid #C4C4C4
+    radius: 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+
+
+.fileup-file.fileup-image .fileup-preview img
+  max-width: none
+  max-height: none
+
+.fileup-file .fileup-controls
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.fileup-file.fileup-image .fileup-container
+  margin: 0
+  position: absolute
+  right: 4px
+  top: 4px
+
+.label-file-result__delete, .fileup-file .fileup-controls .fileup-remove
+  width: 15px
+  height: 15px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1
+  background: transparent
+  right: 0
+  top: 0
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: red
+    width: 1px
+    height: 100%
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+.fileup-file .fileup-controls .fileup-upload, .fileup-file .fileup-controls .fileup-abort, .fileup-file .fileup-clear, .fileup-progress, .fileup-result, .fileup-description
+  display: none
+
+.radio
+  width: 100%
+  max-width: none
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  cursor: pointer
+  .inp-radio
+    padding: 0
+    margin: 0
+    border: none
+
+.inp-radio
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  padding: 0
+  background: transparent
+  z-index: -1
+
+.radio-custom
+  border: 1px solid #C4C4C4
+    radius: 50%
+  width: 20px
+  height: 20px
+  min-width: 20px
+  margin: 0 10px 0 0
+  padding: 0
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    background: $accent
+    width: 11px
+    height: 11px
+    border-radius: 50%
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    display: none
+
+.inp-radio:checked
+  + .radio-custom
+    &:before
+      display: block
+
+.radio-text
+  display: flex
+  align-items: center
+  text-align: left
+  //flex-wrap: wrap
+  width: 100%
+
+  span
+    display: inline-block
+
+  input
+    width: 100%
+    height: 40px
+    padding: 0 15px
+    margin: 0
+  &__title
+    white-space: nowrap
+
+.radio-text__content
+  text-align: left
+  margin: 0 0 0 14px
+  width: 100%
+  max-width: 220px
+  min-width: 215px
+  input
+    width: 100%
+    margin: 0
+
+.form-success__consultation
+  width: 100%
+  margin: 40px auto 0
+  text-align: center
+
+.color-black
+  color: #000
+  &:hover
+    color: $accent
+
+.font-700
+  font-weight: bold
+
+//.page-thanks__item
+//  width: 100%
+//  text-align: center
+//  .thanks-icon
+//    background: #FAFAFA
+//    width: 140px
+//    height: 140px
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    -webkit-box-pack: center
+//    -ms-flex-pack: center
+//    justify-content: center
+//    border-radius: 50%
+//    margin: 0 auto 40px
+//    padding: 48px
+//
+//    .svg-icon
+//      fill: #2AB051
+//
+//  .box-text
+//    font-size: 21px
+//    font-weight: 500
+//    line-height: 140%
+//
+//  .btn
+//    margin: 80px auto 0
+//    max-width: 264px
+
+
 
 .phone-item
   display: inline-block

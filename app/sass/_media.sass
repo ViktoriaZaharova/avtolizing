@@ -208,6 +208,9 @@
     .slick-next
       right: -10px
 
+  .form-success
+    max-width: none
+
 
 
 /* Medium Devices, Desktops
@@ -845,6 +848,12 @@
     max-width: 650px
 
 
+  .page-success__content
+    .overlay-text
+      display: block
+
+  .form-success-box
+    padding: 30px 20px
 
 @media only screen and (max-width: 768px)
   .social-content
@@ -1150,6 +1159,17 @@
     .block_hover
       padding: 15px 0 10px 20px
 
+  .page-thanks
+    padding: 50px 0 40px
+    h1
+      font-size: 40px
+    .overlay-text
+      font-size: 62px
+      top: -44px
+      left: 50%
+      transform: translate(-50%,0)
+      line-height: normal
+
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 650px)
   .button-group
@@ -1220,6 +1240,49 @@
   .h2, .profitable-terms .subtitle
     font-size: 28px
 
+  .form-success-box__row
+    margin: 0 0 20px
+    h3
+      width: 100%
+      margin: 0 0 10px
+
+  .form-success
+    button
+      margin: 10px auto 0
+    input
+      height: 40px
+    .inp-radio
+      height: 100%
+
+    .form-group
+      .radio
+        margin: 0 0 20px
+        width: 100%
+        max-width: none
+        align-items: flex-start
+        &:last-child
+          margin: 0
+          width: 100%
+
+  .radio-text
+    flex-wrap: wrap
+    &__title
+      width: 100%
+
+  .radio-text__content
+    width: 100%
+    max-width: 212px
+    min-width: auto
+    margin: 10px 0 0
+
+  .form-success-file .box-text
+    margin: 0 auto 20px
+
+  .label-file-result
+    margin: 20px 0 0
+
+  .form-success__consultation
+    margin: 20px auto 0
 
 @media only screen and (max-width: 576px)
   header
@@ -1543,19 +1606,11 @@
         margin: 0 0 1px
 
   .page-thanks
-    padding: 60px 0 100px
+    padding: 110px 0 40px
+    h1
+      max-width: 280px
+      margin: 0 auto 30px
 
-    .thanks-icon
-      width: 78px
-      height: 78px
-      margin: 0 auto 35px
-      padding: 22px
-
-    .box-text
-      font-size: 14px
-
-    .btn
-      margin: 55px auto 0
 
   .phone-item
     font-size: 14px
@@ -1851,16 +1906,18 @@
     margin: 20px 0
 
   .documents-content
+    margin: 0
     ul
       max-width: 220px
       line-height: normal
 
 
   .documents-image
-    max-width: 280px
-    .overlay-text
-      top: -44px
-      font-size: 57px
+    display: none
+    //max-width: 280px
+    //.overlay-text
+    //  top: -44px
+    //  font-size: 57px
 
   .documents
     &:before
@@ -1883,7 +1940,11 @@
     width: 50%
 
   .about-image
-    max-width: 320px
+    display: none
+
+  .about
+    padding: 60px 0 40px
+    margin: 0
 
   .about-box
     width: 100%
@@ -1901,7 +1962,14 @@
     h2
       margin: 0 auto 20px
 
+  .page-thanks .form-success
+    button
+      margin: 10px auto 0
+      max-width: 280px
 
+  .fileup-file.fileup-image .fileup-preview
+    width: 65px
+    height: 50px
 
 @media (max-width: 420px)
   .form-cookie .checkbox

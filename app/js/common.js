@@ -1,3 +1,18 @@
+$.fileup({
+    url: window.location.pathname + window.location.search,
+    inputID: 'upload-demo',
+    queueID: 'upload-demo-queue',
+    dropzoneID: '',
+    files: [],
+    fieldName: 'filedata',
+    extraFields: {},
+    sizeLimit: 0,
+    filesLimit: 0,
+    method: 'post',
+    timeout: null,
+    autostart: false,
+});
+
 $(document).ready(function () {
     var input = document.querySelector(".phone-input1");
     window.intlTelInput(input, {
@@ -40,6 +55,7 @@ $(document).ready(function () {
     });
 
 });
+
 
 // input focus
 $("input,textarea").focus(function () {
@@ -302,7 +318,7 @@ $('.reviews-slider').slick({
 var $pagingInfo = $('.counter-slide');
 var $teamSlider = $('.page-article-slider');
 
-$teamSlider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+$teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     var i = (currentSlide ? currentSlide : 0) + 1;
     var prefix = i < 10 ? '0' : '';
     var prefixAll = slick.slideCount < 10 ? '0' : '';
@@ -328,7 +344,7 @@ $('.btn-filter').on('click', function () {
 });
 
 $('.btn-sorting').on('click', function () {
-   $('.mobile-sorting').fadeToggle();
+    $('.mobile-sorting').fadeToggle();
 });
 
 if ($(".page-product-information__head").length) {
@@ -357,15 +373,15 @@ $(document).ready(function ($) {
 // tabs end
 
 
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 576) {
         var header = $('header'),
             scrollPrev = 0;
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var scrolled = $(window).scrollTop();
 
-            if ( scrolled > 100 && scrolled > scrollPrev ) {
+            if (scrolled > 100 && scrolled > scrollPrev) {
                 $('.mobile-vehicle-chat-sms').css('bottom', '0');
             } else {
                 $('.mobile-vehicle-chat-sms').css('bottom', '-100%');
